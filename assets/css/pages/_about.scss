@@ -11,8 +11,7 @@
   }
   
   .cl-banner {
-    padding: 220px 0 160px 0;
-    min-height: 100vh;
+    padding: 220px 0 220px 0;
     background: linear-gradient(
       180deg,
       #c7deff -18.52%,
@@ -58,6 +57,9 @@
   .cl-introduce {
     padding-top: 120px;
     padding-bottom: 60px;
+    .row:first-child{
+      margin-bottom: 6rem;
+    }
     h3{
       font-size: 24px;
       letter-spacing: -0.02em;
@@ -247,9 +249,6 @@
     }
     .cl-introduce{
       padding: 40px 0;
-      .row:first-child{
-        margin-bottom: 6rem;
-      }
       h3{
         font-size: 20px;
         span{
