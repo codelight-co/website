@@ -145,6 +145,9 @@
         border-radius: 100%;
         z-index: 1;
       }
+      .slick-list, .slick-track, .slick-slide, .slick-slide .d-flex{
+        height: 586px!important;
+      }
       .cl-mentors-content{
         margin: auto 50px auto auto;
         width: 410px;
@@ -292,6 +295,8 @@
         top: 0;
         left: 0;
         right: 0;
+        margin-left: auto;
+        margin-right: auto;
         .cl-mentors-content{
           margin: auto;
         }
@@ -386,6 +391,9 @@
         background: none;
         &::before{
           background: none;
+        }
+        .slick-list, .slick-track, .slick-slide, .slick-slide .d-flex{
+          height: auto!important;
         }
         .cl-mentors-content{
           width: 100%;

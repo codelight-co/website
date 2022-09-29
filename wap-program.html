@@ -141,17 +141,35 @@
             <section class="cl-mentors" id="Mentors">
                 <div class="container">
                     <div class="cl-mentors-heading col-lg-6"> <span>Our mentors bring a true entrepreneurial spirit. They have pushed the boundaries of what is possible in their own businesses.</span></div>
-                    <div class="row justify-content-center">
-                        <p class="photo"><img src="assets/images/wap-program/img.png" class="cl-img" alt="" /></p>
+                    <div class="row">
+                        <p class="photo col-md-7"><img src="assets/images/wap-program/img.png" class="cl-img" alt="" /></p>
                         <div class="cl-mentors-frame">
-                            <div class="cl-mentors-content">
-                                <p>Working at Codelight has been a once in a lifetime experience. Every day is different, and I get to be involved with many fascinating companies. </p>
-                                <div class="row">
-                                    <p class="deco col-4"><img src="assets/images/wap-program/deco2.png" class="cl-decor" alt="" /></p>
-                                    <dl class="col-8">
-                                        <dt>Khanh</dt>
-                                        <dd>Marketing Intern - Western Sydney University</dd>
-                                    </dl>
+                            <div class="slide">
+                                <div class="d-flex">
+                                    <div class="cl-mentors-content">
+                                        <p>Working at Codelight has been a once in a lifetime experience. Every day is different, and I get to be involved with many fascinating companies. </p>
+                                        <div class="row">
+                                            <p class="deco col-4"><img src="assets/images/wap-program/deco2.png" class="cl-decor" alt="" /></p>
+                                            <dl class="col-8">
+                                                <dt>Khanh</dt>
+                                                <dd>Marketing Intern - Western Sydney University</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="d-flex">
+                                    <div class="cl-mentors-content">
+                                        <p>If you love what you do, then you love to come to work. Codelight is a great atmosphere to grow your skills. Everyone is so different, but so talented and passionate about their work. </p>
+                                        <div class="row">
+                                            <p class="deco col-4"><img src="assets/images/wap-program/deco3.png" class="cl-decor" alt="" /></p>
+                                            <dl class="col-8">
+                                                <dt>Azhar</dt>
+                                                <dd>Marketing Intern - Bangkok University</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -416,26 +434,13 @@
     <script src="assets/plugins/slick/slick.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
-        jQuery('.cl-project-items').slick({
-            infinite: false,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            responsive: [
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                    }
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    }
-                }
-            ]
+        $('.cl-mentors-frame').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            arrows: false,
         });
     </script>
 </body>

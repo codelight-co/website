@@ -2358,6 +2358,9 @@ main {
   border-radius: 100%;
   z-index: 1;
 }
+.cl-wap-program .cl-mentors .cl-mentors-frame .slick-list, .cl-wap-program .cl-mentors .cl-mentors-frame .slick-track, .cl-wap-program .cl-mentors .cl-mentors-frame .slick-slide, .cl-wap-program .cl-mentors .cl-mentors-frame .slick-slide .d-flex {
+  height: 586px !important;
+}
 .cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content {
   margin: auto 50px auto auto;
   width: 410px;
@@ -2491,6 +2494,8 @@ main {
     top: 0;
     left: 0;
     right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content {
     margin: auto;
@@ -2568,6 +2573,9 @@ main {
   }
   .cl-wap-program .cl-mentors .cl-mentors-frame::before {
     background: none;
+  }
+  .cl-wap-program .cl-mentors .cl-mentors-frame .slick-list, .cl-wap-program .cl-mentors .cl-mentors-frame .slick-track, .cl-wap-program .cl-mentors .cl-mentors-frame .slick-slide, .cl-wap-program .cl-mentors .cl-mentors-frame .slick-slide .d-flex {
+    height: auto !important;
   }
   .cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content {
     width: 100%;
