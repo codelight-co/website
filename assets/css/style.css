@@ -2361,6 +2361,14 @@ main {
 .cl-wap-program .cl-mentors .cl-mentors-frame .slick-list, .cl-wap-program .cl-mentors .cl-mentors-frame .slick-track, .cl-wap-program .cl-mentors .cl-mentors-frame .slick-slide, .cl-wap-program .cl-mentors .cl-mentors-frame .slick-slide .d-flex {
   height: 586px !important;
 }
+.cl-wap-program .cl-mentors .cl-mentors-frame .slick-prev, .cl-wap-program .cl-mentors .cl-mentors-frame .slick-next {
+  height: 40px;
+  width: 40px;
+}
+.cl-wap-program .cl-mentors .cl-mentors-frame .slick-prev:before, .cl-wap-program .cl-mentors .cl-mentors-frame .slick-next:before {
+  font-size: 40px;
+  color: #0041C4;
+}
 .cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content {
   margin: auto 50px auto auto;
   width: 410px;
@@ -2368,6 +2376,9 @@ main {
   line-height: 1.6;
   letter-spacing: 0;
   font-family: "Sen";
+}
+.cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content .row {
+  margin-bottom: -80px;
 }
 .cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content dl {
   font-size: 20px;
@@ -2570,6 +2581,8 @@ main {
     width: auto;
     height: auto;
     background: none;
+    margin-left: auto;
+    margin-right: auto;
   }
   .cl-wap-program .cl-mentors .cl-mentors-frame::before {
     background: none;
@@ -2577,9 +2590,18 @@ main {
   .cl-wap-program .cl-mentors .cl-mentors-frame .slick-list, .cl-wap-program .cl-mentors .cl-mentors-frame .slick-track, .cl-wap-program .cl-mentors .cl-mentors-frame .slick-slide, .cl-wap-program .cl-mentors .cl-mentors-frame .slick-slide .d-flex {
     height: auto !important;
   }
+  .cl-wap-program .cl-mentors .cl-mentors-frame .slick-prev {
+    left: -10px;
+  }
+  .cl-wap-program .cl-mentors .cl-mentors-frame .slick-next {
+    right: -10px;
+  }
   .cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content {
     width: 100%;
     font-size: 16px;
+  }
+  .cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content .row {
+    margin-bottom: 0;
   }
   .cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content .deco {
     width: 26vw;

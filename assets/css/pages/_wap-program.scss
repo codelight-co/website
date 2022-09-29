@@ -148,6 +148,14 @@
       .slick-list, .slick-track, .slick-slide, .slick-slide .d-flex{
         height: 586px!important;
       }
+      .slick-prev, .slick-next {
+        height: 40px;
+        width: 40px;
+      }
+      .slick-prev:before, .slick-next:before{
+        font-size: 40px;
+        color: $cl_primary_color;
+      }
       .cl-mentors-content{
         margin: auto 50px auto auto;
         width: 410px;
@@ -155,7 +163,9 @@
         line-height: 1.6;
         letter-spacing: 0;
         font-family:$cl_font_family;
-        
+        .row{
+          margin-bottom: -80px;
+        }
         dl{
           font-size: 20px;
           line-height: 26px;
@@ -389,15 +399,27 @@
         width: auto;
         height: auto;
         background: none;
+
+        margin-left: auto;
+        margin-right: auto;
         &::before{
           background: none;
         }
         .slick-list, .slick-track, .slick-slide, .slick-slide .d-flex{
           height: auto!important;
         }
+        .slick-prev {
+          left: -10px;
+        }
+        .slick-next{
+          right: -10px;
+        }
         .cl-mentors-content{
           width: 100%;
           font-size: 16px;
+          .row{
+            margin-bottom: 0;
+          }
           .deco{
             width: 26vw;
             margin: 0 auto;
