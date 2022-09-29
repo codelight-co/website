@@ -306,8 +306,8 @@ main {
 }
 .cl-footer {
   padding-top: 63px;
-  padding-bottom: 16px;
-  background: linear-gradient(5deg, #0085FF 0%, #7D17FF 100%);
+  padding-bottom: 20px;
+  background: linear-gradient(5deg, #0085FF 0%, #7D17FF 80%);
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
@@ -331,14 +331,14 @@ main {
 .cl-footer .cl-footer-title {
   font-family: "Inter";
   font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 26px;
   letter-spacing: 0.01em;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
 }
 .cl-footer .cl-footer-body {
-  font-size: 16px;
-  line-height: 33px;
+  font-size: 14px;
+  line-height: 20px;
   color: #fafafa;
 }
 .cl-footer ul {
@@ -347,13 +347,15 @@ main {
   margin-bottom: 0;
   list-style: none;
 }
+.cl-footer ul li {
+  font-size: 16px;
+  line-height: 33px;
+}
 .cl-footer ul li.active a {
   font-weight: bold;
   color: #fff !important;
 }
 .cl-footer ul li a {
-  font-size: 16px;
-  line-height: 33px;
   color: #fafafa;
   padding: 0;
   transition: all ease-in-out 0.3s;
@@ -361,17 +363,21 @@ main {
 .cl-footer ul li a:hover {
   color: #fff;
 }
+.cl-footer .cl-linkedin {
+  display: inline-block;
+  margin: 10px 0 0 0;
+}
 .cl-footer .cl-footer-bottom {
   padding-top: 65px;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  color: rgba(152, 152, 152, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 @media (max-width: 991px) {
   .cl-footer {
-    padding-top: 30px;
+    padding-top: 40px;
   }
   .cl-footer .cl-footer-address {
     margin-bottom: 0;
@@ -380,10 +386,13 @@ main {
     margin-bottom: 10px;
   }
   .cl-footer .cl-footer-bottom {
-    padding-top: 20px;
+    padding-top: 40px;
   }
 }
 @media (max-width: 767px) {
+  .cl-footer {
+    padding-bottom: 30px;
+  }
   .cl-footer .cl-footer-email,
 .cl-footer .cl-footer-address {
     display: flex;
@@ -417,7 +426,7 @@ main {
   transition: all ease-in-out 0.3s;
 }
 .cl-connect .cl-connect-action a:hover {
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 991px) {
@@ -432,6 +441,10 @@ main {
   }
   .cl-connect .cl-connect-action {
     text-align: center;
+  }
+  .cl-connect .cl-connect-action a {
+    font-size: 18px;
+    padding: 15px 30px 15px 30px;
   }
 }
 .cl-homepage {
@@ -832,7 +845,6 @@ main {
   margin-bottom: 26px;
 }
 .cl-homepage .cl-projects .cl-project-items .cl-project-item .cl-project-header .cl-project-logo {
-  width: 70px;
   height: 70px;
 }
 .cl-homepage .cl-projects .cl-project-items .cl-project-item .cl-project-header .cl-project-logo img {
@@ -1364,7 +1376,6 @@ main {
   margin-bottom: 45px;
 }
 .cl-projects .cl-projects-list .cl-project-item .cl-project-header .cl-project-logo {
-  width: 122px;
   height: 122px;
   overflow: hidden;
 }
@@ -2203,30 +2214,30 @@ main {
     margin-bottom: 20px;
   }
 }
-.cl-wtf-program {
+.cl-wap-program {
   background-color: #fff;
   position: relative;
   overflow: hidden;
 }
-.cl-wtf-program::before, .cl-wtf-program::after {
+.cl-wap-program::before, .cl-wap-program::after {
   content: "";
   position: absolute;
   z-index: 1;
   background-repeat: no-repeat;
 }
-.cl-wtf-program .container {
+.cl-wap-program .container {
   width: 1184px;
 }
-.cl-wtf-program .cl-banner {
+.cl-wap-program .cl-banner {
   padding: 104px 0;
   margin: 104px 0 104px 0;
   min-height: 100vh;
-  background: url(../images/wtf-program/banner.jpg) no-repeat center top;
+  background: url(../images/wap-program/banner.jpg) no-repeat center top;
   background-size: cover;
   position: relative;
   box-sizing: border-box;
 }
-.cl-wtf-program .cl-banner::before {
+.cl-wap-program .cl-banner::before {
   content: "";
   position: absolute;
   bottom: -106px;
@@ -2235,38 +2246,39 @@ main {
   width: 137px;
   height: 106px;
 }
-.cl-wtf-program .cl-banner .frame {
-  background: url(../images/wtf-program/frame.png) no-repeat center right;
+.cl-wap-program .cl-banner .frame {
+  background: url(../images/wap-program/frame.png) no-repeat center right;
   background-size: 100% 100%;
   position: relative;
   width: calc(50% + 160px);
   box-sizing: border-box;
 }
-.cl-wtf-program .cl-banner .frame .deco {
+.cl-wap-program .cl-banner .frame .deco {
   position: absolute;
   bottom: -10px;
   right: 53px;
 }
-.cl-wtf-program .cl-banner .cl-banner-body {
+.cl-wap-program .cl-banner .cl-banner-body {
   position: relative;
   z-index: 2;
   padding: 100px 0 120px calc(100% - 720px);
 }
-.cl-wtf-program .cl-banner .cl-banner-body .cl-banner-heading {
+.cl-wap-program .cl-banner .cl-banner-body .cl-banner-heading {
   font-weight: bold;
   font-size: 80px;
   line-height: 1;
   letter-spacing: -0.06em;
   margin-bottom: 3rem;
 }
-.cl-wtf-program .cl-banner .cl-banner-body .cl-banner-heading span {
+.cl-wap-program .cl-banner .cl-banner-body .cl-banner-heading span {
   background: linear-gradient(238.76deg, #7B83FC -24.57%, #7F9CF8 40.2%, #5183D9 73.34%);
+  display: block;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
 }
-.cl-wtf-program .cl-banner .cl-banner-body .cl-banner-action a {
+.cl-wap-program .cl-banner .cl-banner-body .cl-banner-action a {
   display: inline-flex;
   background: linear-gradient(229.57deg, #7d17ff 29%, #0085ff 88.38%);
   border-radius: 60px;
@@ -2277,14 +2289,14 @@ main {
   color: #fafafa;
   transition: all ease-in-out 0.3s;
 }
-.cl-wtf-program .cl-banner .cl-banner-body .cl-banner-action a:hover {
+.cl-wap-program .cl-banner .cl-banner-body .cl-banner-action a:hover {
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
 }
-.cl-wtf-program .cl-introduce {
+.cl-wap-program .cl-introduce {
   padding-bottom: 80px;
   position: relative;
 }
-.cl-wtf-program .cl-introduce .box {
+.cl-wap-program .cl-introduce .box {
   padding: 50px;
   color: #0041C4;
   border: 1px solid #0041C4;
@@ -2295,45 +2307,45 @@ main {
   letter-spacing: 0;
   font-family: "Sen";
 }
-.cl-wtf-program .cl-introduce .box:hover {
+.cl-wap-program .cl-introduce .box:hover {
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
 }
-.cl-wtf-program .cl-introduce .box dl {
+.cl-wap-program .cl-introduce .box dl {
   border-bottom: 1px solid #0041C4;
   display: inline-block;
 }
-.cl-wtf-program .cl-introduce .box dl dt {
+.cl-wap-program .cl-introduce .box dl dt {
   font-size: 30px;
   letter-spacing: -0.02em;
   font-weight: bold;
 }
-.cl-wtf-program .cl-introduce .box-ex {
+.cl-wap-program .cl-introduce .box-ex {
   padding: 50px 200px;
 }
-.cl-wtf-program .cl-mentors {
+.cl-wap-program .cl-mentors {
   padding-bottom: 80px;
   padding-top: 80px;
   position: relative;
 }
-.cl-wtf-program .cl-mentors .container {
+.cl-wap-program .cl-mentors .container {
   position: relative;
   z-index: 2;
 }
-.cl-wtf-program .cl-mentors .cl-mentors-heading {
+.cl-wap-program .cl-mentors .cl-mentors-heading {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.3;
   margin-bottom: 112px;
   color: #1f3549;
 }
-.cl-wtf-program .cl-mentors .row {
+.cl-wap-program .cl-mentors .row {
   position: relative;
 }
-.cl-wtf-program .cl-mentors .row .photo {
+.cl-wap-program .cl-mentors .row .photo {
   position: relative;
   z-index: 2;
 }
-.cl-wtf-program .cl-mentors .cl-mentors-frame {
+.cl-wap-program .cl-mentors .cl-mentors-frame {
   width: 610px;
   height: 610px;
   background-image: linear-gradient(to bottom, #7d17ff, #0085ff);
@@ -2344,7 +2356,7 @@ main {
   top: -170px;
   right: 0;
 }
-.cl-wtf-program .cl-mentors .cl-mentors-frame:before {
+.cl-wap-program .cl-mentors .cl-mentors-frame:before {
   position: absolute;
   content: "";
   top: 2px;
@@ -2355,7 +2367,7 @@ main {
   border-radius: 100%;
   z-index: 1;
 }
-.cl-wtf-program .cl-mentors .cl-mentors-frame .cl-mentors-content {
+.cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content {
   margin: auto 50px auto auto;
   width: 410px;
   font-size: 24px;
@@ -2363,35 +2375,39 @@ main {
   letter-spacing: 0;
   font-family: "Sen";
 }
-.cl-wtf-program .cl-mentors .cl-mentors-frame .cl-mentors-content dl {
+.cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content dl {
   font-size: 20px;
   line-height: 26px;
   font-weight: bold;
   margin: auto 0;
 }
-.cl-wtf-program .cl-mentors .cl-mentors-frame .cl-mentors-content dl dt {
+.cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content dl dt {
   margin-bottom: 0.5rem;
 }
-.cl-wtf-program .cl-mentors .cl-mentors-frame > * {
+.cl-wap-program .cl-mentors .cl-mentors-frame > * {
   position: relative;
   z-index: 1;
 }
-.cl-wtf-program .cl-involved {
+.cl-wap-program .cl-involved {
   padding: 85px 0;
 }
-.cl-wtf-program .cl-involved .cl-involved-heading {
+.cl-wap-program .cl-involved .cl-involved-heading {
   font-weight: bold;
   font-size: 44px;
   line-height: 57px;
   color: #1f3549;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
-.cl-wtf-program .cl-involved .cl-involved-flex {
+.cl-wap-program .cl-involved .cl-involved-heading-mini {
+  margin-bottom: 3rem;
+  color: #656C73;
+}
+.cl-wap-program .cl-involved .cl-involved-flex {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.cl-wtf-program .cl-involved .cl-involved-flex .box {
+.cl-wap-program .cl-involved .cl-involved-flex .box {
   width: 32%;
   border: 1px solid #0041C4;
   border-radius: 12px;
@@ -2399,32 +2415,32 @@ main {
   transition: all ease-in-out 0.3s;
   position: relative;
 }
-.cl-wtf-program .cl-involved .cl-involved-flex .box .coming-soon {
+.cl-wap-program .cl-involved .cl-involved-flex .box .coming-soon {
   position: absolute;
   top: -13px;
   right: -13px;
 }
-.cl-wtf-program .cl-involved .cl-involved-flex .box dl dt {
+.cl-wap-program .cl-involved .cl-involved-flex .box dl dt {
   margin-bottom: 1rem;
   font-size: 24px;
   letter-spacing: -0.02em;
   font-weight: bold;
 }
-.cl-wtf-program .cl-involved .cl-involved-flex .box dl dd {
+.cl-wap-program .cl-involved .cl-involved-flex .box dl dd {
   color: #656C73;
   transition: all ease-in-out 0.3s;
 }
-.cl-wtf-program .cl-involved .cl-involved-flex .box:hover {
+.cl-wap-program .cl-involved .cl-involved-flex .box:hover {
   background: #0041C4;
   color: #fff;
 }
-.cl-wtf-program .cl-involved .cl-involved-flex .box:hover dl dd {
+.cl-wap-program .cl-involved .cl-involved-flex .box:hover dl dd {
   color: #fff;
 }
-.cl-wtf-program .cl-involved .cl-involved-action {
+.cl-wap-program .cl-involved .cl-involved-action {
   margin-bottom: 0;
 }
-.cl-wtf-program .cl-involved .cl-involved-action a {
+.cl-wap-program .cl-involved .cl-involved-action a {
   display: inline-flex;
   color: #0085ff;
   background-color: #fafafa;
@@ -2434,149 +2450,201 @@ main {
   padding: 9px;
   border-radius: 50%;
 }
-.cl-wtf-program .cl-involved .cl-involved-action a:hover {
+.cl-wap-program .cl-involved .cl-involved-action a:hover {
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
 }
-.cl-wtf-program .cl-global {
+.cl-wap-program .cl-global {
   padding: 80px 0 0 0;
 }
-.cl-wtf-program .cl-global .cl-global-heading {
+.cl-wap-program .cl-global .cl-global-heading {
   font-weight: bold;
   font-size: 44px;
   line-height: 57px;
   color: #1f3549;
   margin-bottom: 1rem;
 }
-.cl-wtf-program .cl-global .map {
+.cl-wap-program .cl-global .cl-global-heading-mini {
+  color: #656C73;
+}
+.cl-wap-program .cl-global .map {
   margin-top: 3rem;
   margin-bottom: 0;
 }
 
 @media (max-width: 991px) {
-  .cl-wtf-program .container {
+  .cl-wap-program .container {
     width: 100%;
   }
-  .cl-wtf-program .cl-banner .cl-banner-body {
+  .cl-wap-program .cl-banner .cl-banner-body {
     padding: 100px 0 120px calc(100% - 500px);
   }
-  .cl-wtf-program .cl-banner .cl-banner-body .cl-banner-heading {
+  .cl-wap-program .cl-banner .cl-banner-body .cl-banner-heading {
     font-size: 70px;
   }
-  .cl-wtf-program .cl-banner .frame {
-    width: 70%;
+  .cl-wap-program .cl-banner .frame {
+    width: 74%;
   }
-  .cl-wtf-program .cl-introduce .box-ex {
+  .cl-wap-program .cl-introduce .box-ex {
     padding: 50px;
   }
-  .cl-wtf-program .cl-mentors .photo {
+  .cl-wap-program .cl-mentors .photo {
     width: 100%;
     margin-bottom: 5rem;
   }
-  .cl-wtf-program .cl-mentors .photo img {
+  .cl-wap-program .cl-mentors .photo img {
     width: 100%;
     height: auto;
   }
-  .cl-wtf-program .cl-mentors .cl-mentors-frame {
+  .cl-wap-program .cl-mentors .cl-mentors-frame {
     position: relative;
     top: 0;
     left: 0;
     right: 0;
   }
-  .cl-wtf-program .cl-mentors .cl-mentors-frame .cl-mentors-content {
+  .cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content {
     margin: auto;
   }
-  .cl-wtf-program .cl-involved .cl-involved-flex .box {
+  .cl-wap-program .cl-involved .cl-involved-flex .box {
     width: 49%;
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
   }
-  .cl-wtf-program .cl-involved .cl-involved-flex .box dl dt {
+  .cl-wap-program .cl-involved .cl-involved-flex .box dl dt {
     font-size: 20px;
   }
-  .cl-wtf-program .cl-global .map img {
+  .cl-wap-program .cl-global .map img {
     width: 100%;
     height: auto;
   }
 }
 @media (max-width: 767px) {
-  .cl-wtf-program .container {
+  .cl-wap-program .container {
     width: 100%;
   }
-  .cl-wtf-program .cl-banner {
-    padding: 70vw 0 5vw 0;
-    margin: 0 0 80px 0;
+  .cl-wap-program .cl-banner {
+    padding: 40vw 0 20vw 0;
+    margin: 0 0 50px 0;
     min-height: auto;
     background-position: right top;
   }
-  .cl-wtf-program .cl-banner .frame .deco {
-    width: 20vw;
+  .cl-wap-program .cl-banner .frame .deco {
+    width: 16vw;
     right: 25px;
   }
-  .cl-wtf-program .cl-banner .frame .deco img {
+  .cl-wap-program .cl-banner .frame .deco img {
     width: 100%;
     height: auto;
   }
-  .cl-wtf-program .cl-banner .cl-banner-body {
-    padding: 70px 0 60px 1.5rem;
+  .cl-wap-program .cl-banner .cl-banner-body {
+    padding: 56px 0 40px 1.5rem;
   }
-  .cl-wtf-program .cl-banner .cl-banner-body .cl-banner-heading {
+  .cl-wap-program .cl-banner .cl-banner-body .cl-banner-heading {
     font-size: 36px;
     margin-bottom: 2rem;
   }
-  .cl-wtf-program .cl-introduce {
+  .cl-wap-program .cl-banner .cl-banner-body .cl-banner-action a {
+    padding: 8px 20px 8px 20px;
+    font-size: 14px;
+  }
+  .cl-wap-program .cl-introduce {
     padding-bottom: 40px;
   }
-  .cl-wtf-program .cl-introduce .box {
+  .cl-wap-program .cl-introduce .box {
     padding: 40px 25px;
     font-size: 16px;
     line-height: 30px;
   }
-  .cl-wtf-program .cl-introduce .box dl dt {
+  .cl-wap-program .cl-introduce .box dl dt {
     font-size: 24px;
   }
-  .cl-wtf-program .cl-mentors {
+  .cl-wap-program .cl-introduce .box ul {
+    font-size: 20px;
+    list-style: 34px;
+  }
+  .cl-wap-program .cl-mentors {
     padding: 40px 0;
   }
-  .cl-wtf-program .cl-mentors .cl-mentors-heading {
-    font-size: 22px;
+  .cl-wap-program .cl-mentors .cl-mentors-heading {
+    font-size: 26px;
     margin-bottom: 40px;
   }
-  .cl-wtf-program .cl-mentors .photo {
+  .cl-wap-program .cl-mentors .photo {
     margin-bottom: 2rem;
   }
-  .cl-wtf-program .cl-mentors .cl-mentors-frame {
+  .cl-wap-program .cl-mentors .cl-mentors-frame {
     width: auto;
     height: auto;
     background: none;
   }
-  .cl-wtf-program .cl-mentors .cl-mentors-frame::before {
+  .cl-wap-program .cl-mentors .cl-mentors-frame::before {
     background: none;
   }
-  .cl-wtf-program .cl-mentors .cl-mentors-frame .cl-mentors-content {
+  .cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content {
     width: 100%;
     font-size: 16px;
   }
-  .cl-wtf-program .cl-mentors .cl-mentors-frame .cl-mentors-content .deco {
+  .cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content .deco {
     width: 26vw;
     margin: 0 auto;
   }
-  .cl-wtf-program .cl-mentors .cl-mentors-frame .cl-mentors-content .deco img {
+  .cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content .deco img {
     width: 100%;
     height: auto;
   }
-  .cl-wtf-program .cl-involved {
+  .cl-wap-program .cl-mentors .cl-mentors-frame .cl-mentors-content dl {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .cl-wap-program .cl-involved {
     padding: 40px 0;
   }
-  .cl-wtf-program .cl-involved .cl-involved-heading {
-    font-size: 30px;
+  .cl-wap-program .cl-involved .cl-involved-heading {
+    font-size: 34px;
+    margin-bottom: 0;
   }
-  .cl-wtf-program .cl-involved .cl-involved-flex .box {
+  .cl-wap-program .cl-involved .cl-involved-flex .box {
     width: 100%;
   }
-  .cl-wtf-program .cl-global {
+  .cl-wap-program .cl-involved .cl-involved-flex .box .icon {
+    width: 80px;
+    margin-bottom: 1.5rem;
+  }
+  .cl-wap-program .cl-involved .cl-involved-flex .box .icon img {
+    width: 100%;
+    height: auto;
+  }
+  .cl-wap-program .cl-involved .cl-involved-flex .box dl {
+    margin-bottom: 4rem;
+  }
+  .cl-wap-program .cl-involved .cl-involved-flex .box dl dt {
+    font-size: 25px;
+    margin-bottom: 1.5rem;
+  }
+  .cl-wap-program .cl-involved .cl-involved-flex .box dl dd {
+    font-size: 19px;
+  }
+  .cl-wap-program .cl-involved .cl-involved-flex .cl-involved-action span {
+    width: 50px;
+    display: inline-block;
+  }
+  .cl-wap-program .cl-involved .cl-involved-flex .cl-involved-action span a {
+    display: block;
+  }
+  .cl-wap-program .cl-involved .cl-involved-flex .cl-involved-action span img {
+    width: 100%;
+    height: auto;
+  }
+  .cl-wap-program .cl-global {
     padding: 40px 0;
   }
-  .cl-wtf-program .cl-global .cl-global-heading {
-    font-size: 30px;
+  .cl-wap-program .cl-global .cl-global-heading {
+    font-size: 34px;
+  }
+  .cl-wap-program .cl-global .map {
+    margin: 0 -37vw -20vw -37vw;
+  }
+  .cl-wap-program .cl-global .map img {
+    width: 100%;
+    height: auto;
   }
 }
 .cl-about {
@@ -2591,7 +2659,7 @@ main {
   background-repeat: no-repeat;
 }
 .cl-about .cl-banner {
-  padding: 130px 0 160px 0;
+  padding: 220px 0 160px 0;
   min-height: 100vh;
   background: linear-gradient(180deg, #c7deff -18.52%, #edf2f7 33.95%, #f5f8fd 100%, #fff 100%);
   position: relative;
@@ -2644,6 +2712,10 @@ main {
   background: #0041C4;
   padding: 16px 16px 0 5px;
 }
+.cl-about .cl-introduce ul {
+  font-size: 20px;
+  line-height: 34px;
+}
 .cl-about .cl-introduce .photo img {
   width: 100%;
   height: auto;
@@ -2693,14 +2765,26 @@ main {
 }
 .cl-about .cl-where .cl-where-heading {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 44px;
   line-height: 1.3;
   margin-bottom: 1rem;
   color: #1f3549;
 }
+.cl-about .cl-where .cl-where-heading-mini {
+  color: #656C73;
+  font-size: 24px;
+  line-height: 38px;
+}
+.cl-about .cl-where .photo {
+  overflow: hidden;
+}
 .cl-about .cl-where .photo img {
   width: 100%;
   height: auto;
+  transition: transform 0.4s;
+}
+.cl-about .cl-where .photo img:hover {
+  transform: scale(1.5);
 }
 .cl-about .cl-achievement {
   padding: 80px 0;
@@ -2737,7 +2821,7 @@ main {
     min-height: auto;
   }
   .cl-about .cl-banner .cl-banner-image img {
-    max-height: 420px;
+    /* max-height: 420px; */
   }
   .cl-about .cl-banner .cl-banner-body .cl-banner-heading span {
     font-size: 42px;
@@ -2748,24 +2832,39 @@ main {
 }
 @media (max-width: 767px) {
   .cl-about .cl-banner {
-    padding: 100px 0 40px 0;
+    padding: 67px 0 40px 0;
   }
   .cl-about .cl-banner .cl-banner-image {
     position: relative;
-    top: auto;
+    top: 0;
     left: 0;
-    right: -10vw;
-    width: 110vw;
+    right: 0;
+    width: 100%;
+  }
+  .cl-about .cl-banner .container {
+    position: absolute;
+    top: 42vw;
+    left: 0;
+    right: 0;
   }
   .cl-about .cl-banner .cl-banner-body .cl-banner-heading {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 1.3;
+    color: #fff;
   }
   .cl-about .cl-banner .cl-banner-body .cl-banner-heading span {
-    font-size: 30px;
+    font-size: 40px;
+    color: #fff;
+    line-height: 1;
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .cl-about .cl-introduce {
     padding: 40px 0;
+  }
+  .cl-about .cl-introduce .row:first-child {
+    margin-bottom: 6rem;
   }
   .cl-about .cl-introduce h3 {
     font-size: 20px;
@@ -2777,7 +2876,7 @@ main {
     padding: 40px 0;
   }
   .cl-about .cl-investors .cl-investors-heading {
-    font-size: 30px;
+    font-size: 34px;
     margin-bottom: 2rem;
   }
   .cl-about .cl-investors .bg {
@@ -2793,25 +2892,31 @@ main {
     padding: 40px 0;
   }
   .cl-about .cl-where .cl-where-heading {
-    font-size: 30px;
+    font-size: 34px;
+  }
+  .cl-about .cl-where .cl-where-heading-mini {
+    font-size: 16px;
+    line-height: 24px;
   }
   .cl-about .cl-achievement {
     padding: 40px 0;
   }
   .cl-about .cl-achievement .cl-achievement-heading {
-    font-size: 30px;
+    font-size: 34px;
     margin-bottom: 1rem;
   }
   .cl-about .cl-achievement .cl-achievement-block {
     border-right: none;
-    padding: 1rem 1rem;
+    border-left: 1px solid #0041C4;
+    padding: 1rem 1rem 1rem 2rem;
+    margin-right: 4%;
+    margin-left: 4%;
+    width: 92%;
   }
   .cl-about .cl-achievement .cl-achievement-block h4 {
     font-size: 30px;
   }
   .cl-about .cl-achievement .cl-achievement-block:first-child {
-    border-left: none;
-    border-bottom: 1px solid #0041C4;
     margin-bottom: 1rem;
   }
 }

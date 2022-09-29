@@ -1,0 +1,473 @@
+.cl-wap-program {
+  background-color: $cl_white_color;
+  position: relative;
+  overflow: hidden;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-repeat: no-repeat;
+  }
+  .container {
+    width: 1184px;
+  }
+  .cl-banner {
+    padding: 104px 0;
+    margin: 104px 0 104px 0;
+    min-height: 100vh;
+    background: url(../images/wap-program/banner.jpg)no-repeat center top;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -106px;
+      right: calc(50% - 650px);
+      background-color: #D9D9D9;
+      width: 137px;
+      height: 106px;
+    }
+    .frame{
+      background: url(../images/wap-program/frame.png)no-repeat center right;
+      background-size: 100% 100%;
+      position: relative;
+      width: calc(50% + 160px);
+      
+      box-sizing: border-box;
+      .deco{
+        position:absolute;
+        bottom: -10px;
+        right: 53px;
+      }
+    }
+    .cl-banner-body {
+      position: relative;
+      z-index: 2;
+      padding: 100px 0 120px calc(100% - 720px);
+      .cl-banner-heading {
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 1;
+        letter-spacing: -0.06em;
+        margin-bottom: 3rem;
+        span{
+          background: linear-gradient(238.76deg, #7B83FC -24.57%, #7F9CF8 40.2%, #5183D9 73.34%);
+          display: block;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-fill-color: transparent;
+        }
+      }
+      .cl-banner-action {
+        a {
+          display: inline-flex;
+          background: linear-gradient(229.57deg, #7d17ff 29%, #0085ff 88.38%);
+          border-radius: 60px;
+          padding: 13px 27px 15px 28px;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 26px;
+          color: $cl_light_color;
+          transition: $cl_transition;
+          &:hover {
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+  }
+  .cl-introduce {
+    padding-bottom: 80px;
+    position: relative;
+    .box {
+      padding: 50px;
+      color: $cl_primary_color;
+      border:1px solid $cl_primary_color;
+      border-radius: 12px;
+      transition: $cl_transition;
+      font-size: 20px;
+      line-height: 34px;
+      letter-spacing: 0;
+      font-family: $cl_font_family;
+      &:hover {
+        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+      }
+      dl{
+        border-bottom: 1px solid $cl_primary_color;
+        display: inline-block;
+        dt{
+          font-size: 30px;
+          letter-spacing: -0.02em;
+          font-weight: bold;
+        }
+      }
+    }
+    .box-ex{
+      padding: 50px 200px;
+    }
+  }
+  .cl-mentors {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    position: relative;
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+    .cl-mentors-heading {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 1.3;
+      
+      margin-bottom: 112px;
+      color: $cl_text_color;
+    }
+    .row{
+      position: relative;
+      .photo{
+        position: relative;
+        z-index: 2;
+      }
+    }
+    .cl-mentors-frame{
+      width: 610px;
+      height: 610px;
+      background-image: linear-gradient(to bottom, #7d17ff, #0085ff);
+      border-radius: 100%;
+      position:relative;
+      display: flex;
+      position:absolute;
+      top: -170px;
+      right: 0;
+      &:before{
+        position:absolute;
+        content: "";
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        background: $cl_white_color;
+        border-radius: 100%;
+        z-index: 1;
+      }
+      .cl-mentors-content{
+        margin: auto 50px auto auto;
+        width: 410px;
+        font-size: 24px;
+        line-height: 1.6;
+        letter-spacing: 0;
+        font-family:$cl_font_family;
+        
+        dl{
+          font-size: 20px;
+          line-height: 26px;
+          font-weight: bold;
+          margin: auto 0;
+          dt{
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+      >*{
+        position:relative;
+        z-index: 1;
+      }
+    }
+  }
+  .cl-involved{
+    padding: 85px 0;
+    .cl-involved-heading {
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 57px;
+      color: $cl_text_color;
+      margin-bottom: 1rem;
+    }
+    .cl-involved-heading-mini{
+      margin-bottom: 3rem;
+      color: $cl_darker;
+    }
+    .cl-involved-flex{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .box{
+        width: 32%;
+        border: 1px solid $cl_primary_color;
+        border-radius: 12px;
+        padding: 32px;
+        transition: $cl_transition;
+        position: relative;
+        .coming-soon{
+          position: absolute;
+          top: -13px;
+          right: -13px;
+        }
+        dl{
+          dt{
+            margin-bottom: 1rem;
+            font-size: 24px;
+            letter-spacing: -0.02em;
+            font-weight: bold;
+          }
+          dd{
+            color: $cl_darker;
+            transition: $cl_transition;
+          }
+        }
+        &:hover{
+          background: $cl_primary_color;
+          color: $cl_white_color;
+          dl{
+            dd{
+              color: $cl_white_color;
+            }
+          }
+        }
+      }
+    }
+    .cl-involved-action{
+      margin-bottom: 0;
+      a{
+        display: inline-flex;
+        color: #0085ff;
+        background-color: $cl_light_color;
+        box-shadow: 0px 3px 3px rgba(3, 15, 26, 0.1);
+        border-radius: 4px;
+        transition: $cl_transition;
+        padding: 9px;
+        border-radius: 50%;
+        &:hover {
+          box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+  .cl-global{
+    padding: 80px 0 0 0;
+    .cl-global-heading{
+      font-weight: bold;
+      font-size: 44px;
+      line-height: 57px;
+      color: $cl_text_color;
+      margin-bottom: 1rem;   
+    }
+    .cl-global-heading-mini{
+      color: $cl_darker;
+    }
+    .map{
+      margin-top: 3rem;
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: 991px) {
+  
+  .cl-wap-program{
+    .container {
+        width: 100%;
+    }
+    .cl-banner {
+      .cl-banner-body {
+        padding: 100px 0 120px calc(100% - 500px);
+        .cl-banner-heading{
+          font-size: 70px;
+        }
+      }
+      .frame{
+        width: 74%;
+      }
+    }
+    .cl-introduce {
+      .box-ex{
+        padding: 50px;
+      }
+    }
+    .cl-mentors {
+      .photo{
+        width: 100%;
+        margin-bottom: 5rem;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+      .cl-mentors-frame{
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        .cl-mentors-content{
+          margin: auto;
+        }
+      }
+    }
+    .cl-involved {
+      .cl-involved-flex {
+        .box{
+          width: 49%;
+          margin: 0 0 2rem 0;
+          dl{
+            dt{
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .cl-global {
+      .map{
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  
+  .cl-wap-program {
+    .container {
+        width: 100%;
+    }
+    .cl-banner {
+      padding: 40vw 0 20vw 0;
+      margin: 0 0 50px 0;
+      min-height: auto;
+      background-position: right top;
+      .frame{
+        .deco{
+          width: 16vw;
+          right: 25px;
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+
+      .cl-banner-body{
+        padding: 56px 0 40px 1.5rem;
+        .cl-banner-heading{
+          font-size: 36px;
+          margin-bottom: 2rem;
+        }
+        .cl-banner-action a {
+          padding: 8px 20px 8px 20px;
+          font-size: 14px;
+        }
+      }
+    }
+    .cl-introduce {
+      padding-bottom: 40px;
+      .box{
+        padding: 40px 25px;
+        font-size: 16px;
+        line-height: 30px;
+        dl{
+          dt{
+            font-size: 24px;
+          }
+        }
+        ul{
+          font-size: 20px;
+          list-style: 34px;
+        }
+      }
+    }
+    .cl-mentors {
+      padding: 40px 0;
+      .cl-mentors-heading{
+        font-size: 26px;
+        margin-bottom: 40px;
+      }
+      .photo{
+        margin-bottom: 2rem;
+      }
+      .cl-mentors-frame {
+        width: auto;
+        height: auto;
+        background: none;
+        &::before{
+          background: none;
+        }
+        .cl-mentors-content{
+          width: 100%;
+          font-size: 16px;
+          .deco{
+            width: 26vw;
+            margin: 0 auto;
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+          dl {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+    .cl-involved {
+      padding: 40px 0;
+      .cl-involved-heading{
+        font-size: 34px;
+        margin-bottom: 0;
+      }
+      .cl-involved-flex {
+        .box{
+          width: 100%;
+          .icon{
+            width: 80px;
+            margin-bottom: 1.5rem;
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+          dl{
+            margin-bottom: 4rem;
+            dt{
+              font-size: 25px;
+              margin-bottom: 1.5rem;
+            }
+            dd{
+              font-size: 19px;
+            }
+          }
+        }
+        .cl-involved-action {
+          span{
+            width: 50px;
+            display: inline-block;
+            a{
+              display: block;
+            }
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+    .cl-global {
+      padding: 40px 0;
+      .cl-global-heading{
+        font-size: 34px;
+      }
+      .map{
+        margin: 0 -37vw -20vw -37vw;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
