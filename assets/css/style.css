@@ -2237,15 +2237,6 @@ main {
   position: relative;
   box-sizing: border-box;
 }
-.cl-wap-program .cl-banner::before {
-  content: "";
-  position: absolute;
-  bottom: -106px;
-  right: calc(50% - 650px);
-  background-color: #D9D9D9;
-  width: 137px;
-  height: 106px;
-}
 .cl-wap-program .cl-banner .frame {
   background: url(../images/wap-program/frame.png) no-repeat center right;
   background-size: 100% 100%;

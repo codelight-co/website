@@ -20,15 +20,7 @@
     background-size: cover;
     position: relative;
     box-sizing: border-box;
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: -106px;
-      right: calc(50% - 650px);
-      background-color: #D9D9D9;
-      width: 137px;
-      height: 106px;
-    }
+    
     .frame{
       background: url(../images/wap-program/frame.png)no-repeat center right;
       background-size: 100% 100%;
