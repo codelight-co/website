@@ -189,7 +189,7 @@
       min-height: auto;
       .cl-banner-image {
         img {
-          /* max-height: 420px; */
+          max-height: 420px;
         }
       }
       .cl-banner-body {
@@ -218,6 +218,9 @@
         left: 0;
         right: 0;
         width: 100%;
+        img {
+          max-height: initial;
+        }
       }
       .container{
         position: absolute;

@@ -2821,7 +2821,7 @@ main {
     min-height: auto;
   }
   .cl-about .cl-banner .cl-banner-image img {
-    /* max-height: 420px; */
+    max-height: 420px;
   }
   .cl-about .cl-banner .cl-banner-body .cl-banner-heading span {
     font-size: 42px;
@@ -2840,6 +2840,9 @@ main {
     left: 0;
     right: 0;
     width: 100%;
+  }
+  .cl-about .cl-banner .cl-banner-image img {
+    max-height: initial;
   }
   .cl-about .cl-banner .container {
     position: absolute;
