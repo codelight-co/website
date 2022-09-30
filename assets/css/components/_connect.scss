@@ -20,7 +20,7 @@
       color: $cl_red;
       transition: $cl_transition;
       &:hover {
-        box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
       }
     }
   }
@@ -42,6 +42,10 @@
     }
     .cl-connect-action{
       text-align: center;
+      a {
+        font-size: 18px;
+        padding: 15px 30px 15px 30px;
+      }
     }
   }
 }

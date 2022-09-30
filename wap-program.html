@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon-32x32.png" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Codelight - Our Projects</title>
+    <title>Codelight - WAP Program</title>
     <meta name="theme-color" content="#0041c4">
     <link rel="apple-touch-icon" sizes="48x48" href="assets/icons/icon-48x48.png" />
     <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/icon-72x72.png" />
@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700" media="all" />
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css" />
+    <link rel="stylesheet" href="assets/plugins/slick/slick-theme.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
@@ -60,10 +62,10 @@
                             <a title="About" href="about.html" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
-                            <a title="Our Projects" href="our-projects.html" class="nav-link active">Our Projects</a>
+                            <a title="Our Projects" href="our-projects.html" class="nav-link">Our Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a title="WAP Program" href="wap-program.html" class="nav-link">WAP Program</a>
+                            <a title="WAP Program" href="wap-program.html" class="nav-link active">WAP Program</a>
                         </li>
                         <li class="cl-header-cta nav-item">
                             <a title="Contact us" href="https://discord.com/invite/h8x263RPK6" target="_blank"
@@ -76,82 +78,159 @@
     </header>
 
     <main>
-        <div class="cl-projects">
-            <section class="cl-projects-banner">
+        <div class="cl-wap-program">
+            <section class="cl-banner" id="Banner">
+                <div class="frame">
+                    <div class="cl-banner-body">
+                        <h1 class="cl-banner-heading">
+                            Web3
+                            <span>Apprenticeship</span>
+                            Program
+                        </h1>
+                        <div class="cl-banner-action">
+                            <a href="about.html">Learn more</a>
+                        </div>
+                    </div>
+                    <p class="deco"><img src="assets/images/wap-program/frame_deco.png" class="cl-decor" alt="" /></p>
+                </div>
+            </section>
+
+            <section class="cl-introduce" id="Introduce">
                 <div class="container">
-                    <h1 class="cl-projects-title">
-                        <span>Our work is powered by<br> inspiration and passion for Web3</span>
-                    </h1>
-                    <div class="cl-projects-description">
-                        <span>Explore our suite of web3 products.</span>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 mb-4">
+                            <div class="box">
+                                <dl>
+                                    <dt class="mb-1">OUR MISSION</dt>
+                                    <dd>What we do</dd>
+                                </dl>
+                                <ul>
+                                    <li>We build revolutionary products that <strong>provide real world value </strong>to<strong> transform people's lives.</strong></li>
+                                    <li>We are a company focused on <strong>digital technology, web3, Infrastructure, Fintech, </strong>and<strong> SaaS.</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="box">
+                                <dl>
+                                    <dt class="mb-1">OUR VISION</dt>
+                                    <dd>What prompted us to start</dd>
+                                </dl>
+                                <ul>
+                                    <li>To develop <strong>technology</strong> that has a <strong>positive impact</strong> on people's lives</li>
+                                    <li>Seismic shifts are happening and <strong>Web3</strong> will be a <strong>breakthrough technology</strong> that will be a driving force in many key industries</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="box box-ex">
+                                <dl>
+                                    <dt class="mb-1">THE FUTURE IS TECH</dt>
+                                    <dd>What motivates us</dd>
+                                </dl>
+                                <ul>
+                                    <li>Technology should have both <strong>short</strong> and <strong>long</strong> term benefits for all, <strong>erasing</strong> unfair hierarchies, instead of promoting them.</li>
+                                    <li>We believe in developing technology that promotes <strong>fair markets</strong>. A free market can be fair while bringing <strong>benefit to all.</strong></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            
-            <section class="cl-projects-list">
+
+            <section class="cl-mentors" id="Mentors">
                 <div class="container">
-                    <div class="cl-project-item">
-                        <div class="cl-project-header">
-                            <div class="cl-project-logo">
-                                <img src="assets/images/projects/massbit.svg" alt="" />
+                    <div class="cl-mentors-heading col-lg-6"> <span>Our mentors bring a true entrepreneurial spirit. They have pushed the boundaries of what is possible in their own businesses.</span></div>
+                    <div class="row">
+                        <p class="photo col-md-7"><img src="assets/images/wap-program/img.png" class="cl-img" alt="" /></p>
+                        <div class="cl-mentors-frame">
+                            <div class="slide">
+                                <div class="d-flex">
+                                    <div class="cl-mentors-content">
+                                        <p>Working at Codelight has been a once in a lifetime experience. Every day is different, and I get to be involved with many fascinating companies. </p>
+                                        <div class="row">
+                                            <p class="deco col-4"><img src="assets/images/wap-program/deco2.png" class="cl-decor" alt="" /></p>
+                                            <dl class="col-8">
+                                                <dt>Khanh</dt>
+                                                <dd>Marketing Intern - Western Sydney University</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="cl-project-name">Massbit</div>
-                        </div>
-                        <div class="cl-project-body">
-                            <p>
-                                MassBit is a blockchain infrastructure company, building products that allow layer 1 and
-                                layer 2 to work together quicker, easier, and in the most cost-effective manner. In
-                                doing so, we begin to solve the scalability and interoperability issues that hold back a
-                                true transition to Web3. Everything that MassBit creates solves individual issues within
-                                the Web3 landscape – while also combining together to create powerful development tools
-                                that accelerate products from the design phase, all the way to market.
-                            </p>
-                        </div>
-                        <div class="cl-project-action">
-                            For more information, please visit
-                            <a href="https://massbit.io/" target="_blank" rel="noopener">https://massbit.io/</a>
+                            <div class="slide">
+                                <div class="d-flex">
+                                    <div class="cl-mentors-content">
+                                        <p>If you love what you do, then you love to come to work. Codelight is a great atmosphere to grow your skills. Everyone is so different, but so talented and passionate about their work. </p>
+                                        <div class="row">
+                                            <p class="deco col-4"><img src="assets/images/wap-program/deco3.png" class="cl-decor" alt="" /></p>
+                                            <dl class="col-8">
+                                                <dt>Azhar</dt>
+                                                <dd>Marketing Intern - Bangkok University</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="cl-project-item">
-                        <div class="cl-project-header">
-                            <div class="cl-project-logo">
-                                <img src="assets/images/projects/warena.svg" alt="" />
-                            </div>
-                            <div class="cl-project-name">Warena</div>
-                        </div>
-                        <div class="cl-project-body">
-                            <p>
-                                Warena is a decentralized Metaverse. The game is a cross-chain play and earn sandbox
-                                with a variety of character driven NFT based on an amazing post-apocalyptic
-                                science-fiction world, featuring purchasable land, DEXs, and an open market driven by
-                                the community. Within Warena, players can PLAY, EXPERIENCE, and MONETIZE using their
-                                in-game assets.
+                </div>
+            </section>
+            <section class="cl-involved" id="Involved">
+                <div class="container">
+                    <div class="cl-involved-heading text-center">Get involved</div>
+                    <p class="cl-involved-heading-mini text-center">Begin your journet at Codelight today...</p>
+                    <div class="cl-involved-flex">
+                        <div class="box">
+                            <p class="icon"><img src="assets/images/wap-program/involved_icon1.png" class="cl-icon" alt="" /></p>
+                            <dl>
+                                <dt>TECH INTERNSHIP</dt>
+                                <dd>Valuable real world experience. Learn while you work alongside industry experts and tech veterans.</dd>
+                            </dl>
+                            <p class="cl-involved-action text-right">
+                                <span>
+                                    <a href="internship-test.html"><img src="assets/images/link-right.svg" class="cl-icon" alt="" /></a>
+                                </span>
                             </p>
                         </div>
-                        <div class="cl-project-action">
-                            For more information, please visit
-                            <a href="https://www.warena.io" target="_blank" rel="noopener">https://www.warena.io</a>
+                        <div class="box">
+                            <p class="icon"><img src="assets/images/wap-program/involved_icon2.png" class="cl-icon" alt="" /></p>
+                            <dl>
+                                <dt>MARKETING INTERNSHIP</dt>
+                                <dd>Create and expand emerging markets. Develop professional marketing abilities working with top tech companies. </dd>
+                            </dl>
+                            <p class="cl-involved-action text-right">
+                                <span>
+                                    <a href="internship-test.html"><img src="assets/images/link-right.svg" class="cl-icon" alt="" /></a>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="box">
+                            <p class="icon"><img src="assets/images/wap-program/involved_icon3.png" class="cl-icon" alt="" /></p>
+                            <p class="coming-soon"><img src="assets/images/wap-program/coming_soon.png" class="cl-icon" alt="" /></p>
+                            <dl>
+                                <dt>WEB3 EDUCATION</dt>
+                                <dd>Web3 tech talks, workshops, livestreams, educational courses, etc.</dd>
+                            </dl>
                         </div>
                     </div>
-
-                    <div class="cl-project-item">
-                        <div class="cl-project-header">
-                            <div class="cl-project-logo">
-                                <img src="assets/images/projects/genesisbuilders.svg" alt="" />
-                            </div>
-                            <div class="cl-project-name">Genesisbuilders</div>
-                        </div>
-                        <div class="cl-project-body">
-                            <p>
-                                GB Fund is an investment fund and incubator for Web3 projects. Founded by proven
-                                Builders, we help other Builders to develop projects on a global scale.
-                            </p>
-                        </div>
-                        <div class="cl-project-action">
-                            For more information, please visit
-                            <a href="https://www.thegb.xyz/" target="_blank"
-                                rel="noopener">https://www.thegb.xyz/</a>
+                </div>
+            </section>
+            <section class="cl-global" id="Global">
+                <div class="container">
+                    <div class="cl-global-heading text-center">Global communities</div>
+                    <p class="cl-global-heading-mini text-center">Codelight Projects have over 250k <br class="d-lg-none d-block">dedicated community members</p>
+                    <p class="map text-center"><img src="assets/images/wap-program/map.png" class="cl-map" alt="" /></p>
+                </div>
+            </section>
+            <section class="cl-connect" id="Connect">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="cl-connect-heading col-md-6 text-right">Connect with us!</div>
+                        <div class="cl-connect-action col-md-6">
+                            <span>
+                                <a href="#">Follow us on Linkedin</a>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -352,7 +431,22 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/plugins/slick/slick.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        $('.cl-mentors-frame').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+        $('.cl-mentors-frame').on('touchstart', function() {
+			$('.cl-mentors-frame').slick('slickPlay');
+		});
+    </script>
 </body>
 
 </html>

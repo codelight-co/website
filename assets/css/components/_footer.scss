@@ -1,10 +1,10 @@
 .cl-footer {
   padding-top: 63px;
-  padding-bottom: 16px;
+  padding-bottom: 20px;
   background: linear-gradient(
     5deg,
     #0085FF 0%,
-    #7D17FF 100%
+    #7D17FF 80%
   );
   font-weight: 400;
   font-size: 18px;
@@ -30,14 +30,14 @@
   .cl-footer-title {
     font-family: "Inter";
     font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 26px;
     letter-spacing: 0.01em;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
   }
   .cl-footer-body {
-    font-size: 16px;
-    line-height: 33px;
+    font-size: 14px;
+    line-height: 20px;
     color: $cl_light_color;
   }
   ul {
@@ -46,6 +46,8 @@
     margin-bottom: 0;
     list-style: none;
     li {
+      font-size: 16px;
+      line-height: 33px;
       &.active {
         a {
           font-weight: bold;
@@ -53,8 +55,7 @@
         }
       }
       a {
-        font-size: 16px;
-        line-height: 33px;
+        
         color: $cl_light_color;
         padding: 0;
         transition: $cl_transition;
@@ -64,17 +65,21 @@
       }
     }
   }
+  .cl-linkedin{
+    display: inline-block;
+    margin: 10px 0 0 0;
+  }
   .cl-footer-bottom {
     padding-top: 65px;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: rgba($color: #989898, $alpha: 0.4);
+    color: rgba($cl_white_color, $alpha: 0.4);
   }
 }
 @media (max-width: 991px) {
   .cl-footer {
-    padding-top: 30px;
+    padding-top: 40px;
     .cl-footer-address {
       margin-bottom: 0;
     }
@@ -82,13 +87,14 @@
       margin-bottom: 10px;
     }
     .cl-footer-bottom {
-      padding-top: 20px;
+      padding-top: 40px;
     }
   }
 }
 
 @media (max-width: 767px) {
   .cl-footer {
+    padding-bottom: 30px;
     .cl-footer-email,
     .cl-footer-address {
       display: flex;

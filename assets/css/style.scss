@@ -1,5 +1,6 @@
 // LAVENDER
 $cl_font_family: "Sen";
+$cl-font-roboto:'Roboto';
 $cl_white_color: #fff;
 $cl_light_color: #fafafa;
 $cl_light_color_2: #f9fafb;
@@ -83,7 +84,7 @@ main{
 @import "pages/projects";
 @import "pages/internship";
 @import "pages/internship-test";
-@import "pages/wtf-program";
+@import "pages/wap-program";
 @import "pages/about";
 
 // Modals
