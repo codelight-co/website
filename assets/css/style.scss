@@ -1,16 +1,12 @@
 // LAVENDER
 $cl_font_family: "Sen";
-$cl-font-roboto:'Roboto';
 $cl_white_color: #fff;
 $cl_light_color: #fafafa;
 $cl_light_color_2: #f9fafb;
-$cl_primary_color: #0041C4;
+$cl_primary_color: #0041c4;
 $cl_secondary_color: #3abef0;
 $cl_transition: all ease-in-out 0.3s;
 $cl_text_color: #1f3549;
-$cl_darker:#656C73;
-$cl_yellow:#FFCF5C;
-$cl_red:#FF647C;
 .cl-loading {
   background-color: $cl_white_color;
   position: fixed;
@@ -76,7 +72,6 @@ main{
 @import "components/pagination";
 @import "components/header";
 @import "components/footer";
-@import "components/connect";
 
 // Pages
 @import "pages/homepage";
@@ -84,8 +79,6 @@ main{
 @import "pages/projects";
 @import "pages/internship";
 @import "pages/internship-test";
-@import "pages/wap-program";
-@import "pages/about";
 
 // Modals
 @import "modals/contact-modal";
@@ -93,7 +86,4 @@ main{
 .cl-page-detail{
   min-height: calc(100vh - 385px);
   padding-top: 122px;
-}
-.text-right{
-  text-align: right;
 }

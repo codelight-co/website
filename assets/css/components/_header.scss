@@ -1,6 +1,6 @@
 .cl-navbar {
   background-color: transparent;
-  padding: 24px 0 24px 0;
+  padding: 42px 0 24px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -12,7 +12,7 @@
       .nav-link {
         background: $cl_primary_color;
         box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2);
-        border-radius: 60px;
+        border-radius: 4px;
         padding: 16px 39px;
         font-family: "Inter";
         font-style: normal;
