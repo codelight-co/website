@@ -153,6 +153,9 @@ body {
   font-size: 16px;
   line-height: 180%;
   color: $cl_text_color;
+  @media (max-width: 767px){
+    font-size: 14px;
+  }
 }
 
 ::-webkit-scrollbar {

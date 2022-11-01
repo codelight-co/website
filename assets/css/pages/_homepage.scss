@@ -1044,10 +1044,14 @@
       .cl-title{
         font-size: 24px;
         margin-bottom: 60px;
+        text-align: center;
+      }
+      .cl-btn{
+        text-align: center;
       }
     }
     .cl-recent-events{
-      padding: 100px 0 0 0;
+      padding: 50px 0 0 0;
       .cl-title{
         margin-bottom: 20px;
       }
@@ -1103,13 +1107,16 @@
       padding-top: 50px;
       .cl-title{
         margin-bottom: 10px;
+        text-align: center;
       }
       .cl-projects-heading {
         margin-bottom: 50px;
+        text-align: center;
       }
       .cl-project-description {
         font-size: 14px;
         margin-bottom: 30px;
+        text-align: center;
       }
       .cl-project-items {
         margin-left: -5px;
