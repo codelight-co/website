@@ -6,7 +6,7 @@ $(function () {
     });
 
     function setFixedHeader() {
-        if (window.scrollY > 50 && $(window).width() > 767) {
+        if (window.scrollY > 123 && $(window).width() > 767) {
             $('#header').addClass('sticky');
         } else {
             $('#header').removeClass('sticky');
