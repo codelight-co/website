@@ -524,6 +524,9 @@ main {
     margin-right: 8px;
     margin-top: 3px;
   }
+  .cl-footer .cl-footer-email svg {
+    margin-right: 8px;
+  }
   .cl-footer .cl-footer-email,
 .cl-footer .cl-footer-address {
     display: flex;
@@ -1555,6 +1558,35 @@ main {
   .cl-homepage .cl-join-codelight .cl-join-codelight-action a {
     padding: 12px 60px;
     font-size: 18px;
+  }
+}
+@media (max-width: 360px) {
+  .cl-homepage .cl-about .group {
+    padding: 20px;
+  }
+  .cl-homepage .cl-about .group .item {
+    padding: 0 18px;
+  }
+  .cl-homepage .cl-core-values .flip-container,
+.cl-homepage .cl-core-values .front,
+.cl-homepage .cl-core-values .back {
+    width: 80px;
+    height: 80px;
+  }
+  .cl-homepage .cl-core-values .back {
+    font-size: 9px;
+  }
+  .cl-homepage .cl-core-values .cl-title {
+    margin-bottom: 50px;
+  }
+  .cl-homepage .cl-core-values .group .item:nth-child(2) {
+    left: 50px;
+  }
+  .cl-homepage .cl-core-values .group .item:nth-child(4) {
+    right: 50px;
+  }
+  .cl-homepage .cl-wip-program .cl-title {
+    font-size: 22px;
   }
 }
 .cl-careers {
