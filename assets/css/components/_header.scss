@@ -1,6 +1,7 @@
 .cl-navbar {
-  background-color: transparent;
-  padding: 42px 0 24px 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2px);
+  padding: 46px 0 22px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -10,52 +11,59 @@
     align-items: center;
     .cl-header-cta {
       .nav-link {
-        background: $cl_primary_color;
+        background: $cl_text_title;
         box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-        padding: 16px 39px;
-        font-family: "Inter";
+        border-radius: 8px;
+        padding: 14px 36px;
         font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
         text-align: center;
-        color: $cl_light_color_2;
+        color: $cl_white_color;
         margin-left: 30px;
+        margin-right: 0;
+        &:hover {
+          &::before {
+            width: 0;
+          }
+        }
       }
     }
     .nav-link {
       font-weight: 700;
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: -0.01em;
-      padding: 0 30px;
-      color: #333333;
+      font-size: 14px;
+      line-height: 19px;
+      margin: 0 24px;
+      padding: 0;
+      color: $cl_text_title;
       position: relative;
       white-space: nowrap;
       &::before {
         content: "";
         position: absolute;
-        bottom: -4px;
-        left: 30px;
-        height: 3px;
+        bottom: -15px;
+        left: 0;
+        height: 4px;
         width: 0;
-        background-color: $cl_secondary_color;
+        background-color: $cl_text_title;
         transition: $cl_transition;
       }
-      &.active {
+      &.active,&:hover {
         &::before {
-          width: calc(100% - 60px);
+          width: 100%;
         }
       }
+      
     }
   }
   .cl-logo-light {
     display: none;
   }
   &.sticky {
+    background: rgba(255, 255, 255, 0.8);
     // background: $cl_white_color;
-    background: linear-gradient(
+    /* background: linear-gradient(
       180deg,
       #c7deff -18.52%,
       #edf2f7 33.95%,
@@ -63,7 +71,7 @@
       $cl_white_color 0
     );
     -webkit-backdrop-filter: blur(14px);
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px); */
     -webkit-animation: slide-down 0.5s;
     animation: slide-down 0.5s;
     padding-top: 10px;
@@ -71,12 +79,12 @@
     .navbar-nav {
       .cl-header-cta {
         .nav-link {
-          padding: 10px 30px;
+          //padding: 10px 30px;
         }
       }
     }
   }
-  &.cl-dark {
+  /* &.cl-dark {
     .cl-logo {
       display: none;
     }
@@ -98,36 +106,41 @@
     &.sticky {
       background: linear-gradient(229.57deg, #7d17ff 29%, #0085ff 88.38%);
     }
+  } */
+}
+@media (max-width: 1199px) {
+  .cl-navbar {
+    .navbar-nav {
+      .cl-header-cta {
+        .nav-link {
+          padding: 14px 25px;
+          margin-left: 15px;
+        }
+      }
+      .nav-link {
+        margin: 0 15px;
+      }
+    }
   }
 }
-
 @media (max-width: 991px) {
   .cl-navbar {
-    padding-top: 24px;
+    //padding-top: 24px;
     .navbar-brand {
-      padding-bottom: 10px;
+      //padding-bottom: 10px;
       img {
         height: 32px;
       }
     }
     .navbar-nav {
       .nav-link {
-        padding-left: 16px;
-        padding-right: 16px;
-        font-size: 15px;
-        &::before {
-          left: 16px;
-        }
-        &.active {
-          &::before {
-            width: calc(100% - 32px);
-          }
-        }
+        font-size: 12px;
+        margin: 0 10px;
       }
       .cl-header-cta {
         .nav-link {
-          padding: 10px 20px !important;
-          margin-left: 16px;
+          padding: 10px 20px;
+          margin-left: 10px;
         }
       }
     }
@@ -136,7 +149,7 @@
 
 @media (max-width: 767px) {
   .cl-navbar {
-    background: linear-gradient(229.57deg, #7d17ff 29%, #0085ff 88.38%);
+    background: linear-gradient(229.57deg, #7D17FF 29%, #0085FF 88.38%);
     backdrop-filter: blur(14px);
     padding-bottom: 10px;
     padding-top: 10px;
@@ -156,25 +169,21 @@
     .navbar-nav {
       padding: 20px 0;
       .nav-item {
-        padding: 20px 0;
+        padding: 15px 0;
         .nav-link {
           color: #fff;
           font-size: 18px;
           &::before {
-            left: 20px;
-          }
-          &.active {
-            &::before {
-              width: calc(100% - 40px);
-            }
+            background-color: #fff;
+            bottom: -10px;
           }
         }
         &.cl-header-cta {
           .nav-link {
             margin-left: 0;
-            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+            /* box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
             color: #3a2d78;
-            background: linear-gradient(180deg, #f5fcff -18.52%, #e4d6eb);
+            background: linear-gradient(180deg, #f5fcff -18.52%, #e4d6eb); */
           }
         }
       }

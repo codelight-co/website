@@ -1,18 +1,13 @@
 .cl-footer {
-  padding-top: 63px;
+  padding-top: 65px;
   padding-bottom: 16px;
-  background: linear-gradient(
-    238.76deg,
-    #4b84f9 -5.57%,
-    #0c44b4 55.2%,
-    #011240 102.34%
-  );
+  background: linear-gradient(229.57deg, #7D17FF 29%, #0085FF 88.38%);
   font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 33px;
   color: $cl_light_color;
   .cl-footer-logo {
-    margin-bottom: 33px;
+    margin-bottom: 39px;
   }
   .cl-footer-address {
     margin-bottom: 8px;
@@ -29,16 +24,15 @@
     }
   }
   .cl-footer-title {
-    font-family: "Inter";
-    font-weight: 500;
+    font-weight: 700;
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.01em;
-    margin-bottom: 24px;
+    margin-bottom: 19px;
   }
   .cl-footer-body {
     font-size: 16px;
-    line-height: 33px;
+    line-height: 30px;
     color: $cl_light_color;
   }
   ul {
@@ -66,16 +60,17 @@
     }
   }
   .cl-footer-bottom {
-    padding-top: 65px;
-    font-weight: 400;
+    padding-top:45px;
     font-size: 12px;
     line-height: 16px;
-    color: rgba($color: #989898, $alpha: 0.4);
+    color: $cl_white_color;
+    text-align: center;
+    opacity: 0.6;
   }
 }
 @media (max-width: 991px) {
   .cl-footer {
-    padding-top: 30px;
+    padding-top: 50px;
     .cl-footer-address {
       margin-bottom: 0;
     }
@@ -90,6 +85,12 @@
 
 @media (max-width: 767px) {
   .cl-footer {
+    .cl-footer-address{
+      svg {
+        margin-right: 8px;
+        margin-top: 3px;
+      }
+    }
     .cl-footer-email,
     .cl-footer-address {
       display: flex;
