@@ -3,7 +3,6 @@
   padding-bottom: 16px;
   background: linear-gradient(229.57deg, #7D17FF 29%, #0085FF 88.38%);
   font-weight: 400;
-  font-size: 16px;
   line-height: 33px;
   color: $cl_light_color;
   .cl-footer-logo {
@@ -31,7 +30,6 @@
     margin-bottom: 19px;
   }
   .cl-footer-body {
-    font-size: 16px;
     line-height: 30px;
     color: $cl_light_color;
   }
@@ -48,7 +46,6 @@
         }
       }
       a {
-        font-size: 16px;
         line-height: 33px;
         color: $cl_light_color;
         padding: 0;
@@ -85,6 +82,16 @@
 
 @media (max-width: 767px) {
   .cl-footer {
+    .cl-footer-logo{
+      margin-bottom: 30px;
+      .img-fluid {
+        height: 32px;
+      }
+    }
+    .cl-footer-title{
+      font-size: 20px;
+      line-height: 24px;
+    }
     .cl-footer-address{
       svg {
         margin-right: 8px;
