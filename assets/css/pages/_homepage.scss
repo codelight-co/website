@@ -540,7 +540,7 @@
       z-index: 2;
       .slick-arrow {
         position: absolute;
-        top: -80px;
+        top: -60px;
         width: 63px;
         height: 49px;
         transform: none;
@@ -865,13 +865,19 @@
           padding-bottom: 0;
         }
       }
+      .cl-title{
+        
+      }
+      p{
+        margin-bottom: 20px;
+      }
     }
     .cl-core-values{
       .logo{
         margin-bottom: 10px;
         img{
           width: auto;
-          height: 50px;
+          height: 44px;
         }
       }
       .flip-container,
@@ -884,19 +890,19 @@
         font-size: 16px;
       }
       .cl-title{
-        margin-bottom: 70px;
+        margin-bottom: 90px;
       }
       .group{
         .item:nth-child(1){
           top: -200px;
         }
         .item:nth-child(2){
-          top: -60px;
-          left: 110px;
+          top: -44px;
+          left: 100px;
         }
         .item:nth-child(4){
-          top: -60px;
-          right: 110px;
+          top: -44px;
+          right: 100px;
         }
         .item:nth-child(5){
           top: -200px;
@@ -905,7 +911,21 @@
     }
     .cl-wip-program{
       .cl-title{
-        font-size: 46px;
+        font-size: 36px;
+      }
+    }
+    .cl-recent-events{
+      .cl-title{
+        margin-bottom: 20px;
+      }
+      .cl-disc{
+        font-size: 16px;
+      }
+      .slick-slide {
+        img{
+          width: 300px;
+          height: auto;
+        }
       }
     }
     .cl-welcome {
@@ -939,6 +959,17 @@
     }
     .cl-projects {
       padding-top: 80px;
+      .cl-title{
+        margin-bottom: 20px;
+      }
+      .cl-project-items {
+        .cl-project-item{
+          padding: 30px 18px;
+        }
+        .slide{
+          padding: 0 6px;
+        }
+      }
     }
     .cl-join-codelight {
       padding: 40px 0 80px 0;
@@ -988,20 +1019,19 @@
         }
       }
       .cl-title{
-        margin-top: 60px;
+        margin-top: 40px;
         text-align: center;
       }
       p{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
       .cl-btn{
         text-align: center;
-        margin-top: 40px;
+        margin-top: 20px;
       }
     }
     .cl-core-values{
       .container{
-        background-size: 130%;
         padding: 20px 0 80px 0;
       }
       .logo{
@@ -1013,29 +1043,29 @@
       .flip-container,
       .front,
       .back{
-          width: 90px;
-          height: 90px;
+          width: 110px;
+          height: 110px;
       }
       .back{
         font-size: 10px;
       }
       .cl-title{
-        margin-bottom: 70px;
+        margin-bottom: 90px;
       }
       .group{
         .item:nth-child(1){
-          top: -110px;
+          top: -140px;
         }
         .item:nth-child(2){
-          top: -30px;
-          left: 56px;
+          top: -40px;
+          left: 90px;
         }
         .item:nth-child(4){
-          top: -30px;
-          right: 56px;
+          top: -40px;
+          right: 90px;
         }
         .item:nth-child(5){
-          top: -110px;
+          top: -140px;
         }
       }
     }
@@ -1053,16 +1083,15 @@
     .cl-recent-events{
       padding: 50px 0 0 0;
       .cl-title{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
       .cl-disc{
         font-size: 14px;
         margin-bottom: 40px;
       }
-      ul{
+      .slick-slide {
         img{
-          height: 150px;
-          width: auto;
+          width: 200px;
         }
       }
     }
@@ -1141,6 +1170,43 @@
         a {
           padding: 12px 60px;
           font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 390px) {
+  .cl-homepage{
+    .cl-core-values{
+      .container{
+        background-size: 130%;
+      }
+      .flip-container,
+      .front,
+      .back{
+          width: 90px;
+          height: 90px;
+      }
+      .back{
+        font-size: 10px;
+      }
+      .cl-title{
+        margin-bottom: 70px;
+      }
+      .group{
+        .item:nth-child(1){
+          top: -110px;
+        }
+        .item:nth-child(2){
+          top: -30px;
+          left: 56px;
+        }
+        .item:nth-child(4){
+          top: -30px;
+          right: 56px;
+        }
+        .item:nth-child(5){
+          top: -110px;
         }
       }
     }

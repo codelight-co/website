@@ -10,6 +10,58 @@ $cl_transition: all ease-in-out 0.3s;
 $cl_text_color: #656C73;
 $cl_text_title: #0E0E2C;
 
+.slick-dots {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  list-style: none;
+  line-height: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.slick-dots li {
+  width: 12px;
+  height: 12px;
+  line-height: 0;
+  margin: 0 6px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.slick-dots li button {
+  width: 8px;
+  height: 8px;
+  background-color: #E2E2E2;
+  font-size: 0;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  border:none;
+  box-sizing: border-box;
+  padding: 0;
+}
+.slick-dots li:hover button {
+  background-color: $cl_primary_color;
+  border:2px solid $cl_primary_color;
+  width: 12px;
+  height: 12px;
+}
+.slick-dots li.slick-active button {
+  background-color: $cl_primary_color;
+  border:2px solid $cl_primary_color;
+  width: 12px;
+  height: 12px;
+}
 .cl-loading {
   background-color: $cl_white_color;
   position: fixed;
@@ -38,11 +90,12 @@ $cl_text_title: #0E0E2C;
   color: $cl_text_title;
   margin-bottom: 40px;
   @media (max-width: 991px){
-    font-size: 36px;
+    font-size: 32px;
+    margin-bottom: 20px;
   }
   @media (max-width: 767px){
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
 
@@ -74,7 +127,6 @@ $cl_text_title: #0E0E2C;
   padding: 100px 0;
   text-align: center;
   position: relative;
-  overflow: hidden;
   &:before{
     position: absolute;
     content: "";
@@ -82,7 +134,7 @@ $cl_text_title: #0E0E2C;
     background-size: cover;
     width: 759px;
     height: 673px;
-    bottom: -407px;
+    bottom: -381px;
     left: calc(50% - 1180px);
     z-index: -1;
   }
@@ -105,6 +157,11 @@ $cl_text_title: #0E0E2C;
     margin-bottom: 24px;
     font-size: 48px;
     line-height: 170%;
+  }
+  @media (max-width: 991px){
+    .cl-title{
+      font-size: 32px;
+    }
   }
   @media (max-width: 767px){
     padding: 70px 0;
@@ -192,6 +249,7 @@ main {
 @import "pages/projects";
 @import "pages/internship";
 @import "pages/internship-test";
+@import "pages/wip-program";
 
 // Modals
 @import "modals/contact-modal";
