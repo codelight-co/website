@@ -685,6 +685,44 @@
     }
   }
 }
+@media (max-width: 430px){
+  .cl-wip-program-page{
+    .cl-mentors {
+      padding: 60px 0;
+      .cl-mentors-frame{
+        width: 88vw;
+        height: 88vw;
+        .slick-list, .slick-track, .slick-slide, .slick-slide .d-flex{
+          height: 88vw!important;
+        }
+        .slick-list, .slick-slide{
+          width: 88vw!important;
+        }
+        .cl-mentors-content{
+          p{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+    .cl-involved {
+      .cl-involved-flex {
+        .box {
+          dl {
+            dd{
+              min-height: 90px;
+            }
+          }
+        }
+        .box.ex {
+          dl {
+            padding: 64px 20px 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 390px){
   .cl-wip-program-page{
     .cl-mentors {
@@ -707,6 +745,13 @@
     }
     .cl-involved {
       .cl-involved-flex {
+        .box {
+          dl {
+            dd{
+              min-height: auto;
+            }
+          }
+        }
         .box.ex {
           dl {
             padding: 44px 20px 0 20px;
@@ -716,7 +761,7 @@
     }
   }
 }
-@media (max-width: 360px){
+@media (max-width: 375px){
   .cl-wip-program-page{
     .cl-involved {
       .cl-involved-flex {
