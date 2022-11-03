@@ -186,6 +186,14 @@
   }
 }
 
+.modal .cl-title {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+.modal .modal-body {
+  padding: 2rem 1rem 3rem 1rem;
+}
+
 @-webkit-keyframes loadingEffect {
   0% {
     transform: scale(1);
@@ -227,6 +235,7 @@ body {
 @media (max-width: 767px) {
   body {
     font-size: 14px;
+    line-height: 160%;
   }
 }
 
@@ -250,6 +259,7 @@ a {
 
 main {
   min-height: calc(100vh - 122px - 395px);
+  overflow: hidden;
 }
 
 /* .cl-btn {
@@ -517,7 +527,6 @@ main {
   padding-top: 65px;
   padding-bottom: 16px;
   background: linear-gradient(229.57deg, #7D17FF 29%, #0085FF 88.38%);
-  font-weight: 400;
   line-height: 33px;
   color: #fafafa;
 }
@@ -590,6 +599,9 @@ main {
   }
 }
 @media (max-width: 767px) {
+  .cl-footer {
+    line-height: 160%;
+  }
   .cl-footer .cl-footer-logo {
     margin-bottom: 30px;
   }
@@ -600,9 +612,14 @@ main {
     font-size: 20px;
     line-height: 24px;
   }
+  .cl-footer .cl-footer-body {
+    line-height: 160%;
+  }
+  .cl-footer .cl-footer-address {
+    margin-bottom: 8px;
+  }
   .cl-footer .cl-footer-address svg {
     margin-right: 8px;
-    margin-top: 3px;
   }
   .cl-footer .cl-footer-email svg {
     margin-right: 8px;

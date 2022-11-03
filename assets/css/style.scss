@@ -185,6 +185,15 @@ $cl_text_title: #0E0E2C;
     }
   }
 }
+.modal{
+  .cl-title{
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  .modal-body{
+    padding: 2rem 1rem 3rem 1rem;
+  }
+}
 @keyframes loadingEffect {
   0% {
     transform: scale(1);
@@ -212,6 +221,7 @@ body {
   color: $cl_text_color;
   @media (max-width: 767px){
     font-size: 14px;
+    line-height: 160%;
   }
 }
 
@@ -235,6 +245,7 @@ a {
 
 main {
   min-height: calc(100vh - 122px - 395px);
+  overflow: hidden;
 }
 
 // Components
