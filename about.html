@@ -12,10 +12,10 @@
         </script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="favicon-32x32.png" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <title>Codelight - WIP Program</title>
+        <title>Codelight - About Us</title>
         <meta name="theme-color" content="#0041c4">
         <link rel="apple-touch-icon" sizes="48x48" href="assets/icons/icon-48x48.png" />
         <link rel="apple-touch-icon" sizes="72x72" href="assets/icons/icon-72x72.png" />
@@ -37,9 +37,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&amp;display=swap" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700"
             media="all" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/plugins/slick/slick.css" />
         <link rel="stylesheet" href="assets/css/style.css" />
     </head>
@@ -50,7 +50,7 @@
         </div>
 
         <header>
-            <nav id="header" class="cl-navbar navbar navbar-expand-md cl-dark">
+            <nav id="header" class="cl-navbar navbar navbar-expand-md cl-dark none-bg">
                 <div class="container">
                     <a class="navbar-brand" href="index.html" title="Codelight" rel="home">
                         <img class="cl-logo" src="assets/images/logo.svg" alt="Codelight" />
@@ -68,10 +68,10 @@
                                 <a title="Home" href="index.html" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a title="About Us" href="about.html" class="nav-link">About Us</a>
+                                <a title="About Us" href="about.html" class="nav-link active">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a title="WIP Program" href="wip-program.html" class="nav-link active">WIP Program</a>
+                                <a title="WIP Program" href="wip-program.html" class="nav-link">WIP Program</a>
                             </li>
                             <li class="nav-item">
                                 <a title="Current Projects" href="our-projects.html" class="nav-link">Current
@@ -91,151 +91,157 @@
         </header>
 
         <main>
-            <div class="cl-wip-program-page">
-                <section class="cl-banner" id="Banner">
-                    <!-- <div class="cl-banner-image">
-                        <img src="./assets/images/wip-program/banner-img.png" alt="earth">
-                    </div> -->
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="cl-banner-body">
-                                <h1 class="cl-banner-heading">
-                                    <span>Web3 Innovation <br class="d-none d-md-block">Program</span>
-                                </h1>
-                                <div class="cl-banner-content">
-                                    We believe the future is already here; it's just not evenly distributed yet. <br
-                                        class="d-none d-md-block">We need more adventurers, builders, thinkers, and
-                                    missionaries to bring it <br class="d-none d-md-block">to the entire planet.
-                                </div>
-                                <div class="cl-btn">
-                                    <a href="careers.html">Contact for partnership</a>
-                                </div>
+            <div class="cl-about">
+                <section class="cl-banner">
+                    <div class="cl-banner-body">
+                        <div class="container">
+                            <h1 class="cl-banner-heading">Story</h1>
+                            <div class="cl-banner-content">We believe the future is already here; it's just not evenly
+                                distributed yet. We need more <br class="d-none d-md-block">adventurers, builders,
+                                thinkers, and missionaries to bring it to the entire planet.</div>
+                            <div class="cl-btn">
+                                <a href="careers.html">Open Positions</a>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="cl-mentors" id="Mentors">
+                <section class="our-mentors-spirit">
                     <div class="container">
-                        <div class="cl-title">Our mentors bring a true <br class="d-none d-md-block">entrepreneurial
-                            spirit. They have <br class="d-none d-md-block">pushed the
-                            boundaries of what is <br class="d-none d-md-block">possible in their own businesses.</div>
+                        <div class="cl-title text-center">
+                            Our mentors bring a true entrepreneurial spirit. <br class="d-none d-md-block">They have
+                            pushed the boundaries of what is <br class="d-none d-md-block">possible in their own
+                            businesses.
+                        </div>
                         <div class="group">
-                            <p class="photo"><img src="assets/images/wip-program/mentors-img.jpg" alt="mentors" /></p>
-                            <div class="cl-mentors-frame">
-                                <div>
-                                    <div class="d-flex">
-                                        <div class="cl-mentors-content">
-                                            <p>Working at Codelight has been a once in a lifetime experience. Every day
-                                                is different, and I get to be involved with many fascinating companies.
-                                            </p>
-                                            <div class="row">
-                                                <div class="deco col-4"><img
-                                                        src="assets/images/wip-program/mentors-avatar1.png"
-                                                        class="cl-decor" alt="" /></div>
-                                                <dl class="col-8">
-                                                    <dt>Khanh</dt>
-                                                    <dd>Marketing Intern -<br>
-                                                        Western Sydney University</dd>
-                                                </dl>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex">
-                                        <div class="cl-mentors-content">
-                                            <p>If you love what you do, then you love
-                                                to come to work. Codelight is a great atmosphere to grow your skills.
-                                                Everyone is so different, but so
-                                                talented & passionate about their work. </p>
-                                            <div class="row">
-                                                <div class="deco col-4"><img
-                                                        src="assets/images/wip-program/mentors-avatar2.png"
-                                                        class="cl-decor" alt="" /></div>
-                                                <dl class="col-8">
-                                                    <dt>Azhar</dt>
-                                                    <dd>Marketing Intern -<br>
-                                                        Bangkok University</dd>
-                                                </dl>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="item">
+                                <dl>
+                                    <dt>2020</dt>
+                                    <dd>year founded</dd>
+                                </dl>
+                            </div>
+                            <div class="item">
+                                <dl>
+                                    <dt>250,000+</dt>
+                                    <dd>community members</dd>
+                                </dl>
+                            </div>
+                            <div class="item">
+                                <dl>
+                                    <dt>40+</dt>
+                                    <dd>employees</dd>
+                                </dl>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="cl-global" id="Global">
+                <section class="cl-our-team">
                     <div class="container">
-                        <div class="cl-title text-center">Global Communities</div>
-                        <p class="cl-disc text-center">Codelight Projects have over 250k dedicated
-                            community members</p>
-                    </div>
-                    <p class="map text-center"><img src="assets/images/wip-program/map.png" alt="map" /></p>
-                </section>
-                <section class="cl-involved" id="Involved">
-                    <div class="container">
-                        <div class="cl-title text-center">Get Involved</div>
-                        <p class="cl-disc text-center">Begin your journey at Codelight today...</p>
-                        <div class="cl-involved-flex">
-                            <div class="box">
-                                <div class="icon"><img src="assets/images/wip-program/Involved-img1.png" class="cl-icon"
-                                        alt="" /></div>
-                                <dl>
-                                    <dt>TECH INTERNSHIP</dt>
-                                    <dd>Valuable real world experience. Learn while you work alongside industry experts
-                                        and tech veterans.</dd>
-                                </dl>
-                                <div class="cl-btn">
-                                    <span>
-                                        <a href="#">Learn More</a>
-                                    </span>
+                        <div class="cl-title text-center">
+                            Our Team
+                        </div>
+                        <div class="cl-disc text-center">
+                            Codelight Projects have over 250k dedicated community members
+                        </div>
+                        <div class="group">
+                            <div class="item">
+                                <div class="photo">
+                                    <img src="./assets/images/about/our-team-img1.png" alt="Our Team">
                                 </div>
+                                <dl>
+                                    <dt>Mike</dt>
+                                    <dd>“A quote”</dd>
+                                </dl>
                             </div>
-                            <div class="box ex">
-                                <dl>
-                                    <dt>MARKETING INTERNSHIP</dt>
-                                    <dd>Create and expand emerging markets. Develop professional marketing abilities
-                                        working with top tech companies. </dd>
-                                </dl>
-                                <div class="cl-btn">
-                                    <span>
-                                        <a href="https://www.linkedin.com/jobs/view/3341564332/?refId=ejUK4WOliAUDP%2FnV6rTomQ%3D%3D&trackingId=0gK4ie2zyNnBZjUanLjE3w%3D%3D" target="_blank">Learn More</a>
-                                    </span>
+                            <div class="item">
+                                <div class="photo">
+                                    <img src="./assets/images/about/our-team-img2.png" alt="Our Team">
                                 </div>
-                                <div class="icon"><img src="assets/images/wip-program/Involved-img2.png" class="cl-icon"
-                                        alt="" /></div>
+                                <dl>
+                                    <dt>Kate</dt>
+                                    <dd>Social handle</dd>
+                                </dl>
                             </div>
-                            <div class="box">
-                                <div class="icon"><img src="assets/images/wip-program/Involved-img3.png" class="cl-icon"
-                                        alt="" /></div>
-                                <div class="coming-soon"><img src="assets/images/wip-program/coming_soon.png"
-                                        class="cl-icon" alt="" /></div>
-                                <dl>
-                                    <dt>WEB3 EDUCATION</dt>
-                                    <dd>Web3 tech talks, workshops, livestreams, educational courses, etc.</dd>
-                                </dl>
-                                <div class="cl-btn">
-                                    <span>
-                                        <a href="#mc_embed_signup">Learn More</a>
-                                    </span>
+                            <div class="item">
+                                <div class="photo">
+                                    <img src="./assets/images/about/our-team-img3.png" alt="Our Team">
                                 </div>
+                                <dl>
+                                    <dt>Colin</dt>
+                                    <dd>Social handle</dd>
+                                </dl>
+                            </div>
+                            <div class="item">
+                                <div class="photo">
+                                    <img src="./assets/images/about/our-team-img1.png" alt="Our Team">
+                                </div>
+                                <dl>
+                                    <dt>Azhar</dt>
+                                    <dd>Social handle</dd>
+                                </dl>
                             </div>
                         </div>
+                        <!-- <div class="cl-btn text-center">
+                        <a href="#">See More</a>
+                    </div> -->
                     </div>
                 </section>
-                <section class="cl-activities" id="Activities">
+                <section class="cl-partners">
                     <div class="container">
-                        <div class="cl-title text-center">Activities</div>
-                        <p class="cl-disc text-center">Begin your journey at Codelight today...</p>
+                        <div class="cl-title text-center">
+                            Partners
+                        </div>
+                        <div class="cl-disc text-center">
+                            Codelight Projects have over 250k dedicated community members
+                        </div>
+                        <ul class="slider-partners">
+                            <li><img src="./assets/images/about/TheGB.svg" class="cl-img" alt="" /></li>
+                            <li><img src="./assets/images/about/web3.svg" class="cl-img" alt="" /></li>
+                            <li><img src="./assets/images/about/animoca.svg" class="cl-img" alt=""></li>
+                            <li><img src="./assets/images/about/Harmony.svg" class="cl-img" alt=""></li>
+                            <li><img src="./assets/images/about/Polygon.svg" class="cl-img" alt=""></li>
+                            <li><img src="./assets/images/about/thunder-core.svg" class="cl-img" alt=""></li>
+                            <li><img src="./assets/images/about/icetea-labs.svg" class="cl-img" alt="" /></li>
+                            <li><img src="./assets/images/about/bnc.svg" class="cl-img" alt="" /></li>
+                            <li><img src="./assets/images/about/supraoracles.svg" class="cl-img" alt=""></li>
+                            <li><img src="./assets/images/about/solana.svg" class="cl-img" alt=""></li>
+                            <li><img src="./assets/images/about/math-wallet.svg" class="cl-img" alt=""></li>
+                            <li><img src="./assets/images/about/Ignition.svg" class="cl-img" alt=""></li>
+                        </ul>
                     </div>
-                    <div class="activities-slider">
-                        <img src="assets/images/wip-program/activities-img1.png" alt="activities">
-                        <img src="assets/images/wip-program/activities-img2.png" alt="activities">
-                        <img src="assets/images/wip-program/activities-img3.png" alt="activities">
-                        <img src="assets/images/wip-program/activities-img4.png" alt="activities">
-                        <img src="assets/images/wip-program/activities-img5.png" alt="activities">
-                        <img src="assets/images/wip-program/activities-img6.png" alt="activities">
+                </section>
+                <section class="cl-achieved">
+                    <div class="container">
+                        <div class="cl-title text-center">
+                            What We Have Achieved So Far
+                        </div>
+                        <div class="time-line">
+                            <div class="item">
+                                <div class="year">
+                                    2021
+                                </div>
+                                <ul>
+                                    <li>Massbit won BSC, Solana Hackathon</li>
+                                    <li>Massbit applies for Polygon grant</li>
+                                    <li>Community members reach 10K members (Massbit), 300K (Warena), 19.5K (EZ Wallet)
+                                    </li>
+                                    <li>Warena listing on Coinmarket Cap, Coin Gecko, Coin 98,...</li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <div class="year">
+                                    2022
+                                </div>
+                                <ul>
+                                    <li>Pikasso (Metabase) received grant from Starkware</li>
+                                    <li>Massbit recieved Web-3 Foundation grant</li>
+                                    <li>Warena successfully applies for HarmonyOne Grant</li>
+                                    <li>400+ Applications for the advocates role in 3 days</li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <div class="year">More to come</div>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="cl-contact">
@@ -383,15 +389,14 @@
                                     <div id="mc_embed_signup_scroll">
                                         <div class="entry__field text-dark" style="width: 100%">
                                             <input class="input" type="text" id="mce-EMAIL" name="EMAIL"
-                                                autocomplete="off" placeholder="Email"
-                                                data-required="true" required
+                                                autocomplete="off" placeholder="Email" data-required="true" required
                                                 style="padding-left: 30px;" />
                                             <button id="mc-embedded-subscribe"
                                                 class="sib-form-block__button sib-form-block__button-with-loader"
                                                 form="sib-form" type="submit"
                                                 style="background-color: transparent;padding: 12px 20px;">
-                                                <svg width="30" height="30" viewBox="0 0 30 30"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0_2043_3991)">
                                                         <path
                                                             d="M26.185 13.364L6.39026 2.27906C6.0572 2.09256 5.67515 2.01216 5.29517 2.0486C4.91519 2.08505 4.55538 2.23659 4.26384 2.48299C3.97229 2.72939 3.76289 3.0589 3.66363 3.42749C3.56436 3.79608 3.57996 4.18619 3.70834 4.54568L7.10723 14.0626H15.9376C16.1862 14.0626 16.4247 14.1614 16.6005 14.3372C16.7763 14.513 16.8751 14.7514 16.8751 15.0001C16.8751 15.2487 16.7763 15.4872 16.6005 15.663C16.4247 15.8388 16.1862 15.9376 15.9376 15.9376H7.10723L3.70834 25.4545C3.60786 25.7374 3.5766 26.0402 3.61717 26.3377C3.65775 26.6351 3.76899 26.9186 3.94158 27.1642C4.11416 27.4098 4.34307 27.6106 4.60915 27.7496C4.87524 27.8886 5.17075 27.9619 5.47095 27.9633C5.79312 27.9627 6.10972 27.8793 6.39037 27.7211L26.1849 16.6361C26.4757 16.4733 26.7178 16.2358 26.8864 15.9483C27.0549 15.6607 27.1438 15.3334 27.1438 15.0001C27.1438 14.6668 27.055 14.3395 26.8864 14.0519C26.7179 13.7644 26.4758 13.5269 26.185 13.364Z"
@@ -420,7 +425,7 @@
         <script src="assets/plugins/slick/slick.min.js"></script>
         <script src="assets/js/script.js"></script>
         <script>
-            $('.cl-involved-flex').slick({
+            $('.our-mentors-spirit .group').slick({
                 autoplay: true,
                 autoplaySpeed: 3000,
                 speed: 1000,
@@ -440,39 +445,6 @@
                         settings: "getslick"
                     }
                 ]
-            });
-            $('.activities-slider').slick({
-                speed: 8000,
-                autoplay: true,
-                autoplaySpeed: 0,
-                centerMode: true,
-                cssEase: 'linear',
-                slidesToShow: 1,
-                draggable: false,
-                focusOnSelect: false,
-                pauseOnFocus: false,
-                pauseOnHover: false,
-                slidesToScroll: 1,
-                variableWidth: true,
-                infinite: true,
-                initialSlide: 1,
-                arrows: false,
-                buttons: false
-            });
-            $('.cl-mentors-frame').slick({
-                dots: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-                adaptiveHeight: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                arrows: false,
-                variableWidth: true,
-                centerMode: true,
-            });
-            $('.cl-mentors-frame').on('touchstart', function () {
-                $('.cl-mentors-frame').slick('slickPlay');
             });
         </script>
     </body>

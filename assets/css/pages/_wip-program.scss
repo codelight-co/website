@@ -2,7 +2,9 @@
   position: relative;
   .cl-banner {
     padding: 228px 0 170px;
-    background: linear-gradient(238.76deg, #4B84F9 -5.57%, #0C44B4 55.2%, #011240 102.34%);
+    //background: linear-gradient(238.76deg, #4B84F9 -5.57%, #0C44B4 55.2%, #011240 102.34%);
+    background: url("../images/wip-program/banner.jpg")no-repeat center center,linear-gradient(238.76deg, #4B84F9 -5.57%, #0C44B4 55.2%, #011240 102.34%);
+    background-size: cover;
     position: relative;
     overflow: hidden;
     .cl-banner-image {
@@ -54,6 +56,12 @@
         z-index: 2;
         margin-bottom: 0;
         width: 712px;
+        border-radius: 16px;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height: auto;
+        }
       }
     }
     .cl-mentors-frame{
@@ -561,7 +569,6 @@
   .cl-wip-program-page {
     .cl-banner {
       padding: 120px 0 60px 0;
-      background-position: center right 42%;
       .cl-banner-body {
         .cl-banner-heading {
           font-size: 30px;
@@ -570,6 +577,7 @@
         }
         .cl-banner-content{
           margin-bottom: 30px;
+          padding-right: 30px;
         }
         .cl-banner-action {
           a {

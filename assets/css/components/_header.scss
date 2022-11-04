@@ -111,6 +111,9 @@
       background: linear-gradient(229.57deg, #7D17FF 29%, #0085FF 88.38%);
     }
   }
+  &.none-bg{
+    background: none;
+  }
 }
 @media (max-width: 1199px) {
   .cl-navbar {
