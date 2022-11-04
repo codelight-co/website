@@ -3789,6 +3789,16 @@ main {
   right: 0;
   height: 2px;
 }
+.cl-about .cl-achieved .time-line:after {
+  position: absolute;
+  content: "";
+  background: url("../images/arrow-line.png") no-repeat right top;
+  background-size: cover;
+  top: 56px;
+  right: 0;
+  width: 10px;
+  height: 16px;
+}
 .cl-about .cl-achieved .time-line .item {
   padding: 0 0 0 40px;
   width: 36%;
@@ -3862,6 +3872,9 @@ main {
   .cl-about .cl-achieved .time-line:before {
     top: 50px;
   }
+  .cl-about .cl-achieved .time-line::after {
+    top: 43px;
+  }
   .cl-about .cl-achieved .time-line .item {
     padding: 0 0 0 20px;
     width: 38%;
@@ -3916,6 +3929,9 @@ main {
   }
   .cl-about .cl-achieved .time-line:before {
     top: 40px;
+  }
+  .cl-about .cl-achieved .time-line::after {
+    top: 33px;
   }
   .cl-about .cl-achieved .time-line .item {
     width: 40%;
@@ -4008,6 +4024,14 @@ main {
     bottom: 0;
     height: 100%;
     width: auto;
+  }
+  .cl-about .cl-achieved .time-line:after {
+    background: url("../images/arrow-down-line.png") no-repeat bottom left;
+    top: auto;
+    left: -8px;
+    bottom: 0;
+    height: 10px;
+    width: 16px;
   }
   .cl-about .cl-achieved .time-line .item {
     width: 100%;

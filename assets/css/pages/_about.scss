@@ -187,6 +187,16 @@
         right: 0;
         height: 2px;
       }
+      &:after{
+        position: absolute;
+        content: "";
+        background: url("../images/arrow-line.png")no-repeat right top;
+        background-size: cover;
+        top: 56px;
+        right: 0;
+        width: 10px;
+        height: 16px;
+      }
       .item{
         padding: 0 0 0 40px;
         width: 36%;
@@ -296,6 +306,9 @@
         &:before{
           top: 50px;
         }
+        &::after{
+          top: 43px;
+        }
         .item{
           padding: 0 0 0 20px;
           width: 38%;
@@ -372,6 +385,9 @@
       .time-line{
         &:before{
           top: 40px;
+        }
+        &::after{
+          top: 33px;
         }
         .item{
           width: 40%;
@@ -479,6 +495,14 @@
           bottom: 0;
           height: 100%;
           width: auto;
+        }
+        &:after{
+          background: url("../images/arrow-down-line.png")no-repeat bottom left;
+          top: auto;
+          left: -8px;
+          bottom: 0;
+          height: 10px;
+          width: 16px;
         }
         .item{
           width: 100%;
