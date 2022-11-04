@@ -164,7 +164,11 @@
       justify-content: space-between;
       margin-bottom: 0;
       li{
-        
+        text-align: center;
+        img{
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
