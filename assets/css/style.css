@@ -3867,7 +3867,7 @@ main {
     grid-template-columns: calc(33.33% - 20px) calc(33.33% - 20px) calc(33.33% - 20px);
   }
   .cl-about .cl-partners .slider-partners {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: calc(33.33% - 13px) calc(33.33% - 13px) calc(33.33% - 13px);
   }
   .cl-about .cl-achieved .time-line:before {
     top: 50px;
@@ -3916,9 +3916,6 @@ main {
   .cl-about .cl-partners .cl-disc {
     font-size: 16px;
     line-height: 160%;
-  }
-  .cl-about .cl-partners .slider-partners {
-    grid-template-columns: 31% 31% 31%;
   }
   .cl-about .cl-partners .slider-partners li img {
     width: 100%;
