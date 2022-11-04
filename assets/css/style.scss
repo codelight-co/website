@@ -18,7 +18,7 @@ $cl_text_title: #0E0E2C;
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: -20px;
+  bottom: -30px;
   left: 0;
   right: 0;
   text-align: center;
@@ -261,6 +261,7 @@ main {
 @import "pages/internship";
 @import "pages/internship-test";
 @import "pages/wip-program";
+@import "pages/about";
 
 // Modals
 @import "modals/contact-modal";

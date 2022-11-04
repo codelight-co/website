@@ -6,26 +6,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    /* background: linear-gradient(
-      180deg,
-      #c7deff -18.52%,
-      #edf2f7 33.95%,
-      #f5f8fd 100%,
-      $cl_white_color 100%
-    ); */
     position: relative;
-    /* &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%; 
-      height: 100%;
-      background-image: url(../images/banner.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center top;
-    } */
     .cl-banner-image {
       position: relative;
       z-index: 2;
@@ -39,17 +20,6 @@
         line-height: 120%;
         text-align: center;
         color: $cl_text_title;
-
-        /* background: linear-gradient(
-          238.76deg,
-          #4b84f9 -5.57%,
-          #0c44b4 55.2%,
-          #011240 102.34%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        text-fill-color: transparent; */
         margin-bottom: 44px;
       }
       .cl-banner-content {
@@ -521,7 +491,7 @@
       }
     }
   }
-  .cl-projects {
+  .cl-our-projects {
     padding-top: 160px;
     padding-bottom: 10px;
     .cl-title {
@@ -615,7 +585,7 @@
           color: $cl_text_color;
           display: -webkit-box;
           max-width: 100%;
-          -webkit-line-clamp: 4;
+          -webkit-line-clamp: 6;
           -webkit-box-orient: vertical;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -801,7 +771,7 @@
         }
       }
     }
-    .cl-projects {
+    .cl-our-projects {
       .cl-project-description{
         font-size: 16px;
       }
@@ -957,7 +927,7 @@
         }
       }
     }
-    .cl-projects {
+    .cl-our-projects {
       padding-top: 80px;
       .cl-title{
         margin-bottom: 20px;
@@ -1116,7 +1086,7 @@
     .cl-welcome .cl-welcome-heading,
     .cl-culture .cl-culture-heading,
     .cl-founder-message .cl-founder-message-card .cl-founder-message-heading,
-    .cl-projects .cl-projects-heading,
+    .cl-our-projects .cl-our-projects-heading,
     .cl-join-codelight .cl-join-codelight-heading {
       font-size: 30px;
       line-height: 36px;
@@ -1132,13 +1102,13 @@
         padding: 20px;
       }
     }
-    .cl-projects {
+    .cl-our-projects {
       padding-top: 50px;
       .cl-title{
         margin-bottom: 10px;
         text-align: center;
       }
-      .cl-projects-heading {
+      .cl-our-projects-heading {
         margin-bottom: 50px;
         text-align: center;
       }
@@ -1199,11 +1169,11 @@
         }
         .item:nth-child(2){
           top: -30px;
-          left: 56px;
+          left: 64px;
         }
         .item:nth-child(4){
           top: -30px;
-          right: 56px;
+          right: 64px;
         }
         .item:nth-child(5){
           top: -110px;
@@ -1304,7 +1274,31 @@
 }
 @media (max-width: 320px){
   .cl-homepage{
+    .cl-about{
+      .group{
+        padding: 20px 16px;
+        .item{
+          padding: 0 16px;
+          dl{
+            dt{
+              font-size: 10px;
+              line-height: 140%;
+            }
+            dd{
+              font-size: 26px;
+            }
+          }
+        }
+        .item:nth-child(2){
+          border-left: 2px solid #0E0E2C;
+          border-right: 2px solid #0E0E2C;
+        }
+      }
+    }
     .cl-core-values{
+      .cl-title{
+        margin-bottom: 30px;
+      }
       .group{
         .item:nth-child(2){
           left: 38px;

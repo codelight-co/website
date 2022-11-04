@@ -67,18 +67,21 @@
                                 <a title="Home" href="index.html" class="nav-link">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a title="Careers" href="careers.html" class="nav-link">Careers</a>
+                                <a title="About Us" href="about.html" class="nav-link">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a title="Internship" href="internship.html" class="nav-link">Internship</a>
+                                <a title="WIP Program" href="wip-program.html" class="nav-link">WIP Program</a>
                             </li>
                             <li class="nav-item">
-                                <a title="Our Projects" href="our-projects.html" class="nav-link active">Our
+                                <a title="Current Projects" href="our-projects.html" class="nav-link active">Current
                                     Projects</a>
                             </li>
+                            <li class="nav-item">
+                                <a title="Careers" href="careers.html" class="nav-link">Careers</a>
+                            </li>
+
                             <li class="cl-header-cta nav-item">
-                                <a title="Contact us" href="https://discord.com/invite/h8x263RPK6" target="_blank"
-                                    class="nav-link">Contactus</a>
+                                <a title="Sign up" href="#mc_embed_signup" class="nav-link">Sign up</a>
                             </li>
                         </ul>
                     </div>
@@ -152,12 +155,25 @@
                     </div>
                 </section>
             </div>
+            <div class="modal fade" id="SubscribeModal" tabindex="-1" aria-labelledby="SubscribeModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <div class="cl-title" id="message">Your subscription has been successful.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer id="footer" class="cl-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="col-xl-5 mb-4 mb-xl-0">
                         <div class="cl-footer-logo">
                             <img src="assets/images/logo-white.svg" class="img-fluid" alt="" />
                         </div>
@@ -179,6 +195,15 @@
                             </svg>
                             <span>Vinhomes Central Park, Binh Thanh, HCMC, Vietnam</span>
                         </div>
+                        <div class="cl-footer-address">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.7681 2.00005C8.15903 1.98439 4.39435 5.65135 4.24389 10.2414L4.23926 10.5263C4.31587 12.7761 5.08133 14.9207 6.42954 16.6876L6.74618 17.1008C8.03306 18.7371 9.56237 20.1733 11.2795 21.3571L11.693 21.6354L11.7533 21.6828C12.3419 22.1057 13.1365 22.1057 13.7251 21.6828L13.7753 21.6415C15.1378 20.7579 16.3943 19.7196 17.5197 18.5473C19.8079 16.1252 21.187 13.4112 21.239 10.655L21.2392 10.5526C21.2548 5.93192 17.5991 2.15567 13.0232 2.00469L12.7681 2.00005ZM12.7629 3.51747C16.5414 3.53038 19.6093 6.54942 19.7232 10.3091L19.7264 10.6406C19.6826 12.9514 18.4727 15.3324 16.4259 17.4991C15.3822 18.5863 14.212 19.5526 12.9428 20.3745L12.8582 20.438C12.7899 20.4974 12.6885 20.4974 12.6201 20.438L12.5379 20.376C10.6472 19.1416 8.98783 17.583 7.63562 15.7717C6.54644 14.3442 5.90101 12.6374 5.7711 10.8569L5.75201 10.4999C5.76485 6.71221 8.77458 3.63498 12.5227 3.52071L12.7629 3.51747ZM12.7392 7.40129C10.9508 7.40129 9.50101 8.85554 9.50101 10.6495C9.50101 12.4434 10.9508 13.8976 12.7392 13.8976C14.5276 13.8976 15.9774 12.4434 15.9774 10.6495C15.9774 8.85554 14.5276 7.40129 12.7392 7.40129ZM12.7392 8.91871C13.6921 8.91871 14.4646 9.69359 14.4646 10.6495C14.4646 11.6053 13.6921 12.3802 12.7392 12.3802C11.7863 12.3802 11.0138 11.6053 11.0138 10.6495C11.0138 9.69359 11.7863 8.91871 12.7392 8.91871Z"
+                                    fill="#FAFAFA"></path>
+                            </svg>
+                            <span>Vinhomes Central Park, Binh Thanh, HCMC, Vietnam</span>
+                        </div>
                         <div class="cl-footer-email">
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -186,58 +211,52 @@
                                     d="M17.2646 3.00005L8.19544 3C5.02591 3 2.73926 5.56151 2.73926 8.85897V15.141C2.73926 18.4385 5.02591 21 8.19544 21H17.2561C18.7785 20.9829 20.2195 20.3421 21.2518 19.2266C22.2842 18.111 22.8179 16.6183 22.7286 15.0959L22.7299 8.85897C22.8179 7.38171 22.2842 5.88895 21.2518 4.77344C20.2195 3.65794 18.7785 3.01705 17.2646 3.00005ZM8.19544 4.52843L17.2476 4.52838C18.3466 4.54072 19.3925 5.00592 20.1419 5.81562C20.8912 6.62533 21.2786 7.70887 21.2138 8.81389L21.2124 15.141C21.2786 16.2911 20.8912 17.3747 20.1419 18.1844C19.3925 18.9941 18.3466 19.4593 17.2476 19.4716L8.19544 19.4716C5.90205 19.4716 4.2567 17.6284 4.2567 15.141V8.85897C4.2567 6.37155 5.90205 4.52843 8.19544 4.52843ZM18.7633 8.63837C18.5014 8.30886 18.024 8.25555 17.6968 8.5193L13.5975 11.8242L13.4801 11.9068C12.9967 12.2095 12.362 12.1816 11.8991 11.8181L7.76983 8.51731L7.67689 8.4536C7.35662 8.26727 6.94067 8.34031 6.70387 8.64086C6.44338 8.97146 6.4983 9.45216 6.82652 9.71453L10.961 13.0195L11.1223 13.1375C12.1623 13.8459 13.5406 13.8067 14.5381 13.0236L18.6451 9.71255L18.7275 9.63551C18.9792 9.36261 19.0013 8.93792 18.7633 8.63837Z"
                                     fill="#FAFAFA"></path>
                             </svg>
-                            <a href="mailto:contact@codelight.co">contact@codelight.co</a>
+                            <a href="mailto:info@codelight.co">info@codelight.co</a>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-6">
+                    <div class="col-xl-3 col-md-6">
                         <div class="cl-footer-title">About us</div>
-                        <div class="cl-footer-body">
-                            <nav class="menu-about-us-container">
+                        <div class="cl-footer-body row">
+                            <nav class="col-6 menu-about-us-container">
                                 <ul class="nav">
                                     <li class="nav-item">
-                                        <a aria-current="page" href="index.html#Culture" class="nav-link">Culture</a>
+                                        <a href="about.html" class="nav-link">Story</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="internship.html" class="nav-link">Internship</a>
+                                        <a href="wip-program.html" class="nav-link">[WIP] Program</a>
                                     </li>
-                                    <li class="nav-item active">
+                                    <li class="nav-item">
                                         <a href="our-projects.html" class="nav-link">Products</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a target="_blank" href="https://discord.gg/h8x263RPK6"
-                                            class="nav-link">Contact</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">Privacy Policy</a>
                                     </li>
                                 </ul>
                             </nav>
+                            <nav class="col-6 menu-about-us-container">
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="careers.html" class="nav-link">Careers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="about.html#partners" class="nav-link">Partnerhship</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-6">
-                        <div class="cl-footer-title">Join us</div>
-                        <div class="cl-footer-body">
-                            <ul>
-                                <li><a href="careers.html">Careers</a></li>
-                                <li>Follow us at:<br>
-                                    <a href="https://www.linkedin.com/company/codelightco/" target="_blank">
-                                        <img src="assets/images/icon-linkedin.svg" alt="" />
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="ps-lg-0 col-lg-3 col-md-4 mt-5 mt-md-0">
+                    <div class="ps-lg-0 col-xl-4 col-md-6 mt-3 mt-md-0">
                         <div class="cl-footer-title">Stay in the loop!</div>
-                        <div class="cl-footer-body"> Subcribe to our newsletter</div>
-                        <div class="cl-footer-subscribe" style="padding-top: 12px;">
+                        <div class="cl-footer-body">Subscribe to our newsletter for daily/weekly update of our products
+                            and services.</div>
+                        <div class="cl-footer-subscribe" style="padding-top: 20px;">
                             <!-- Begin Sendinblue Form -->
                             <!-- START - We recommend to place the below code in head tag of your website html  -->
 
                             <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
                             <style>
                                 .entry__label {
-                                    font-family: 'Sen';
+                                    font-family:'Manrope', sans-serif;
                                 }
 
                                 .sib-form .entry__field {
@@ -251,105 +270,53 @@
                                     padding: 0 !important;
                                     margin: 0 !important;
                                 }
+                                .sib-form .input{
+                                    font-family:'Manrope', sans-serif;
+                                    font-size: 14px;
+                                    line-height: 19px;
+                                    color: #656C73;
+                                }
                             </style>
                             <!--  END - We recommend to place the above code in head tag of your website html -->
                             <!-- START - We recommend to place the below code where you want the form in your website html  -->
-                            <div class="sib-form" style="background-color: transparent;">
-                                <div id="sib-form-container" class="sib-form-container">
-                                    <div id="sib-container" class="sib-container--large sib-container--vertical"
-                                        style="text-align:center; background-color:transparent; max-width:540px; border-width:0px; border-color:#C0CCD9; border-style:solid;">
-                                        <form id="sib-form" method="POST"
-                                            action="https://6a1cdb6e.sibforms.com/serve/MUIEAHx8538HtdV2erCKOsEzlTf_V8ShrofPkovRcLb6V-TmbEcvOjbFTwmZXX6QA_2fj1bacgDk9DRbdo9n-VeCLjYAYh_4Oe5We4OWmZGk-aHG8Ry7iKYPMIdRpHgVaNt29F-oor8ELy4Hg-zFG3SM8CjBKUJheNVrd8x-EbSYLoPPn9oA8LQIbxUEVun0rPn8hZxl2HFTpq-m"
-                                            data-type="subscription">
-                                            <div class="sib-input sib-form-block">
-                                                <div class="form__entry entry_block">
-                                                    <div class="form__label-row ">
-                                                        <div class="entry__field text-dark">
-                                                            <input class="input" type="text" id="EMAIL" name="EMAIL"
-                                                                autocomplete="off" placeholder="Your email address"
-                                                                data-required="true" required
-                                                                style="padding-left: 30px;" />
-                                                            <button
-                                                                class="sib-form-block__button sib-form-block__button-with-loader"
-                                                                form="sib-form" type="submit"
-                                                                style="background-color: transparent;padding: 15px 20px;">
-                                                                <svg width="20" height="20" viewBox="0 0 20 20"
-                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path
-                                                                        d="M17.8631 2.15167C17.4463 1.72385 16.8294 1.56447 16.2541 1.73224L2.84032 5.63296C2.23341 5.80157 1.80323 6.28559 1.68735 6.90048C1.56897 7.52627 1.98247 8.32068 2.52269 8.65287L6.71691 11.2307C7.14709 11.4949 7.70231 11.4287 8.05829 11.0696L12.8611 6.23694C13.1029 5.98528 13.503 5.98528 13.7448 6.23694C13.9866 6.48021 13.9866 6.87448 13.7448 7.12613L8.93365 11.9597C8.57684 12.3179 8.51014 12.8757 8.77275 13.3086L11.3355 17.5448C11.6356 18.0481 12.1525 18.3334 12.7194 18.3334C12.7861 18.3334 12.8611 18.3334 12.9278 18.325C13.5781 18.2411 14.0949 17.7965 14.2867 17.1673L18.2633 3.77068C18.4384 3.20025 18.28 2.57949 17.8631 2.15167"
-                                                                        fill="url(#paint0_linear_857_1018)" />
-                                                                    <defs>
-                                                                        <linearGradient id="paint0_linear_857_1018"
-                                                                            x1="17.3903" y1="-2.34566" x2="-3.73118"
-                                                                            y2="10.4672" gradientUnits="userSpaceOnUse">
-                                                                            <stop stop-color="#4B84F9" />
-                                                                            <stop offset="0.563109"
-                                                                                stop-color="#0C44B4" />
-                                                                            <stop offset="1" stop-color="#011240" />
-                                                                        </linearGradient>
-                                                                    </defs>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <label class="entry__error entry__error--primary"
-                                                        style="font-size:13px; text-align:left; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;"></label>
-                                                </div>
-                                            </div>
-                                            <input type="text" name="email_address_check" value=""
-                                                class="input--hidden">
-                                            <input type="hidden" name="locale" value="en">
-                                        </form>
-                                    </div>
-                                    <div id="error-message" class="sib-form-message-panel mt-2"
-                                        style="font-size:14px; text-align:left; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
-                                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                                                <path
-                                                    d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
-                                            </svg>
-                                            <span class="sib-form-message-panel__inner-text">Your subscription could
-                                                not be saved. Please try again.</span>
-                                        </div>
-                                    </div>
-                                    <div id="success-message" class="sib-form-message-panel mt-2"
-                                        style="font-size:16px; text-align:left; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
-                                        <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-                                            <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-                                                <path
-                                                    d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
-                                            </svg>
-                                            <span class="sib-form-message-panel__inner-text">Your subscription has
-                                                been successful.</span>
-                                        </div>
-                                    </div>
+                            <div id="mc_embed_signup" class="sib-form" style="background-color: transparent;">
+                                <form
+                                    action="https://codelight.us21.list-manage.com/subscribe/post?u=782c79688b879d5d557d7b7ca&amp;id=3962115e26&amp;f_id=00a6c1e1f0"
+                                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                    class="validate" target="_blank" novalidate>
+                                    <div id="mc_embed_signup_scroll">
+                                        <div class="entry__field text-dark" style="width: 100%">
+                                            <input class="input" type="text" id="mce-EMAIL" name="EMAIL"
+                                                autocomplete="off" placeholder="Email"
+                                                data-required="true" required
+                                                style="padding-left: 30px;" />
+                                            <button id="mc-embedded-subscribe"
+                                                class="sib-form-block__button sib-form-block__button-with-loader"
+                                                form="sib-form" type="submit"
+                                                style="background-color: transparent;padding: 12px 20px;">
+                                                <svg width="30" height="30" viewBox="0 0 30 30"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_2043_3991)">
+                                                        <path
+                                                            d="M26.185 13.364L6.39026 2.27906C6.0572 2.09256 5.67515 2.01216 5.29517 2.0486C4.91519 2.08505 4.55538 2.23659 4.26384 2.48299C3.97229 2.72939 3.76289 3.0589 3.66363 3.42749C3.56436 3.79608 3.57996 4.18619 3.70834 4.54568L7.10723 14.0626H15.9376C16.1862 14.0626 16.4247 14.1614 16.6005 14.3372C16.7763 14.513 16.8751 14.7514 16.8751 15.0001C16.8751 15.2487 16.7763 15.4872 16.6005 15.663C16.4247 15.8388 16.1862 15.9376 15.9376 15.9376H7.10723L3.70834 25.4545C3.60786 25.7374 3.5766 26.0402 3.61717 26.3377C3.65775 26.6351 3.76899 26.9186 3.94158 27.1642C4.11416 27.4098 4.34307 27.6106 4.60915 27.7496C4.87524 27.8886 5.17075 27.9619 5.47095 27.9633C5.79312 27.9627 6.10972 27.8793 6.39037 27.7211L26.1849 16.6361C26.4757 16.4733 26.7178 16.2358 26.8864 15.9483C27.0549 15.6607 27.1438 15.3334 27.1438 15.0001C27.1438 14.6668 27.055 14.3395 26.8864 14.0519C26.7179 13.7644 26.4758 13.5269 26.185 13.364Z"
+                                                            fill="black" />
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_2043_3991">
+                                                            <rect width="30" height="30" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
 
-                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <!-- END - We recommend to place the below code where you want the form in your website html  -->
-
-                            <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
-                            <script>
-                                window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-                                window.LOCALE = 'en';
-                                window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-                                window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
-                                window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-                                window.translation = {
-                                    common: {
-                                        selectedList: '{quantity} list selected',
-                                        selectedLists: '{quantity} lists selected'
-                                    }
-                                };
-                                var AUTOHIDE = Boolean(0);
-                            </script>
-                            <script src="https://sibforms.com/forms/end-form/build/main.js"></script>
-                            <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
-                            <!-- End Sendinblue Form -->
                         </div>
                     </div>
                 </div>
-                <div class="cl-footer-bottom"> © 2022 Designed by Codelight</div>
+                <div class="cl-footer-bottom">© Copyright 2022 Codelight. All rights reserved.</div>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
