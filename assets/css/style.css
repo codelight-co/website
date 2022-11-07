@@ -334,6 +334,12 @@ main {
   color: #3abef0;
 }
 
+@media (max-width: 767px) {
+  .page_numb .page-numbers li {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
 .cl-navbar {
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(2px);
@@ -2063,6 +2069,138 @@ main {
   margin-bottom: 50px;
 }
 
+@media (max-width: 991px) {
+  .cl-careers .cl-careers-banner {
+    padding-bottom: 80px;
+    font-size: 18px;
+    line-height: 160%;
+  }
+  .cl-careers .cl-careers-banner h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .cl-careers .cl-careers-banner {
+    padding-top: 120px;
+    padding-bottom: 60px;
+    font-size: 14px;
+  }
+  .cl-careers .cl-careers-banner h1 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  .cl-careers .cl-careers-list {
+    padding-bottom: 60px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-title {
+    margin-bottom: 40px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-title span {
+    font-size: 20px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-title span:before {
+    bottom: -10px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-controls {
+    display: block;
+    padding-bottom: 40px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-controls .cl-careers-search {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-controls .cl-view-list {
+    width: 30px;
+    height: 30px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-controls .cl-view-card {
+    width: 30px;
+    height: 30px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-controls .cl-separator svg {
+    width: 2px;
+    height: 30px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-controls .cl-filter-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-controls .cl-toggle-view,
+.cl-careers .cl-careers-list .cl-careers-controls .cl-separator {
+    margin-right: 15px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-tags {
+    margin-bottom: 40px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-items {
+    margin-bottom: 0;
+  }
+  .cl-careers .cl-careers-list .cl-careers-items .cl-careers-item {
+    padding: 50px 20px 20px 20px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-items .cl-careers-item .cl-careers-item-info {
+    font-size: 14px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-items .cl-careers-item .cl-careers-item-info h3 {
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 0;
+  }
+  .cl-careers .cl-careers-list .cl-careers-items .cl-careers-item .cl-careers-item-view {
+    top: 20px;
+    right: 20px;
+  }
+  .cl-careers .cl-careers-list .cl-careers-items .cl-careers-item .cl-careers-item-view svg {
+    width: 30px;
+    height: 30px;
+  }
+  .cl-careers .cl-work-with-us .cl-work-with-us-title {
+    margin-bottom: 40px;
+  }
+  .cl-careers .cl-work-with-us .cl-work-with-us-title span {
+    font-size: 20px;
+  }
+  .cl-careers .cl-work-with-us .cl-work-with-us-title span:before {
+    bottom: -10px;
+  }
+  .cl-careers .cl-work-with-us .cl-work-with-us-body {
+    font-size: 30px;
+    line-height: 1.3;
+    margin-bottom: 50px;
+  }
+  .cl-careers .cl-work-with-us .cl-work-with-us-link a {
+    padding: 10px 50px 10px 50px;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 24px;
+  }
+  .cl-careers .cl-work-with-us .cl-work-with-us-image {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cl-careers .cl-career-content {
+    font-size: 14px;
+    line-height: 160%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .cl-careers .cl-career-content h1 {
+    font-size: 24px;
+    line-height: 160%;
+    margin-bottom: 30px;
+  }
+  .cl-careers .cl-career-content h2 {
+    font-size: 16px;
+    line-height: 160%;
+  }
+  .cl-careers .cl-career-content p {
+    margin-bottom: 40px;
+  }
+}
 .cl-projects {
   padding-bottom: 20px;
   background-image: url(../images/projects/projects-bg.svg);
