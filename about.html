@@ -81,7 +81,7 @@
                             </li> -->
 
                             <li class="cl-header-cta nav-item">
-                                <a title="Sign up" href="https://www.linkedin.com/company/codelightco/" target="_blank" class="nav-link">Sign up</a>
+                                <a title="Careers" href="https://www.linkedin.com/company/codelightco/" target="_blank" class="nav-link">Careers</a>
                             </li>
                         </ul>
                     </div>
@@ -245,8 +245,7 @@
                             Keep in touch with us!
                         </div>
                         <div class="cl-btn">
-                            <a href="https://www.linkedin.com/company/codelightco/" target="_blank">Follow us on
-                                Linkedin</a>
+                            <a href="https://www.linkedin.com/company/codelightco/" target="_blank">Connect on Linkedin</a>
                         </div>
                     </div>
                 </section>
@@ -420,26 +419,52 @@
         <script src="assets/plugins/slick/slick.min.js"></script>
         <script src="assets/js/script.js"></script>
         <script>
-            $('.our-mentors-spirit .group').slick({
-                autoplay: true,
-                autoplaySpeed: 3000,
-                speed: 1000,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                centerMode: true,
-                arrows: false,
-                dots: true,
-                pauseOnFocus: false,
-                pauseOnHover: false,
-                responsive: [
-                    {
-                        breakpoint: 9999,
-                        settings: "unslick"
-                    }, {
-                        breakpoint: 767,
-                        settings: "getslick"
-                    }
-                ]
+            $(document).ready(function() {
+                $('.our-mentors-spirit .group').slick({
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    speed: 1000,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    arrows: false,
+                    dots: true,
+                    pauseOnFocus: false,
+                    pauseOnHover: false,
+                    responsive: [
+                        {
+                            breakpoint: 9999,
+                            settings: "unslick"
+                        }, {
+                            breakpoint: 767,
+                            settings: "getslick"
+                        }
+                    ]
+                });
+            });
+            
+            $(window).resize(function() {
+                $('.our-mentors-spirit .group').slick({
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    speed: 1000,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    arrows: false,
+                    dots: true,
+                    pauseOnFocus: false,
+                    pauseOnHover: false,
+                    responsive: [
+                        {
+                            breakpoint: 9999,
+                            settings: "unslick"
+                        }, {
+                            breakpoint: 767,
+                            settings: "getslick"
+                        }
+                    ]
+                });
             });
         </script>
     </body>
