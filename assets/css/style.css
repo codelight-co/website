@@ -654,6 +654,21 @@ main {
   background-position: center center;
   position: relative;
 }
+.cl-homepage .cl-banner .deco1 {
+  position: absolute;
+  bottom: 129px;
+  left: calc(50% - 560px);
+}
+.cl-homepage .cl-banner .deco2 {
+  position: absolute;
+  top: 267px;
+  right: calc(50% - 410px);
+}
+.cl-homepage .cl-banner .deco3 {
+  position: absolute;
+  bottom: 129px;
+  right: calc(50% - 617px);
+}
 .cl-homepage .cl-banner .cl-banner-image {
   position: relative;
   z-index: 2;
@@ -756,9 +771,6 @@ main {
 .cl-homepage .cl-about .group .item:nth-child(3) {
   padding-right: 0;
 }
-.cl-homepage .cl-about .cl-title {
-  margin-top: 59px;
-}
 .cl-homepage .cl-about p {
   margin-bottom: 40px;
 }
@@ -859,13 +871,13 @@ main {
 .cl-homepage .cl-wip-program {
   background: url("../images/wip-program-bg.jpg") no-repeat center center;
   background-size: cover;
-  padding: 80px 0;
+  padding: 80px 0 190px 0;
 }
 .cl-homepage .cl-wip-program .cl-title {
   font-size: 60px;
   line-height: 120%;
   color: #fff;
-  margin-bottom: 172px;
+  margin-bottom: 60px;
 }
 .cl-homepage .cl-wip-program .cl-btn a {
   background-color: transparent;
@@ -1281,9 +1293,6 @@ main {
   .cl-homepage .cl-about .group {
     margin: -24px 0 0 0;
   }
-  .cl-homepage .cl-about .cl-title {
-    margin-top: 0;
-  }
   .cl-homepage .cl-core-values .container {
     padding: 52px 0 100px 0;
   }
@@ -1427,8 +1436,12 @@ main {
   .cl-homepage .cl-core-values .group .item:nth-child(5) {
     top: -200px;
   }
+  .cl-homepage .cl-wip-program {
+    padding: 80px 0 160px 0;
+  }
   .cl-homepage .cl-wip-program .cl-title {
     font-size: 36px;
+    margin-bottom: 40px;
   }
   .cl-homepage .cl-recent-events .cl-title {
     margin-bottom: 20px;
@@ -1565,11 +1578,11 @@ main {
     top: -140px;
   }
   .cl-homepage .cl-wip-program {
-    padding: 40px 0;
+    padding: 40px 0 110px 0;
   }
   .cl-homepage .cl-wip-program .cl-title {
     font-size: 24px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     text-align: center;
   }
   .cl-homepage .cl-wip-program .cl-btn {
@@ -3785,7 +3798,7 @@ main {
 }
 .cl-about .our-mentors-spirit .cl-title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 38px;
   line-height: 140%;
   letter-spacing: 0.01em;
   margin-bottom: 70px;
@@ -3800,6 +3813,27 @@ main {
   text-align: center;
   width: 32%;
   padding: 113px 20px;
+  overflow: hidden;
+  position: relative;
+}
+.cl-about .our-mentors-spirit .group .item::before {
+  content: "";
+  position: absolute;
+  top: calc(1.5rem + 30px);
+  left: calc(100% - 2rem - 30px);
+  width: 2.25rem;
+  height: 0;
+  padding-bottom: 2.25rem;
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: #F9FAFB;
+  transition: background-color 0.15s 0.25s, width 0.4s, left 0.4s, padding-bottom 0.4s, top 0.4s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  z-index: 1;
+}
+.cl-about .our-mentors-spirit .group .item > * {
+  position: relative;
+  z-index: 1;
 }
 .cl-about .our-mentors-spirit .group .item dl {
   margin-bottom: 0;
@@ -3823,8 +3857,13 @@ main {
   letter-spacing: 0.13em;
   margin-bottom: 0;
 }
-.cl-about .our-mentors-spirit .group .item:hover {
-  background: linear-gradient(229.57deg, #7D17FF 29%, #0085FF 88.38%);
+.cl-about .our-mentors-spirit .group .item:hover::before {
+  background: linear-gradient(229.57deg, #7D17FF 40%, #0085FF 80%);
+  width: 160%;
+  top: 50%;
+  left: 50%;
+  padding-bottom: 160%;
+  transition: background 0.15s, width 0.4s, left 0.4s, padding-bottom 0.4s, top 0.4s;
 }
 .cl-about .our-mentors-spirit .group .item:hover dl dt {
   background: linear-gradient(229.57deg, #fff 29%, #fff 88.38%);
@@ -3983,6 +4022,9 @@ main {
 }
 
 @media (max-width: 1399px) {
+  .cl-about .our-mentors-spirit .cl-title {
+    font-size: 32px;
+  }
   .cl-about .our-mentors-spirit .group .item dl dt {
     font-size: 66px;
     line-height: 110%;
@@ -3998,6 +4040,9 @@ main {
   }
 }
 @media (max-width: 1199px) {
+  .cl-about .our-mentors-spirit .cl-title {
+    font-size: 28px;
+  }
   .cl-about .our-mentors-spirit .group .item {
     padding: 90px 20px;
   }
@@ -4030,7 +4075,7 @@ main {
 }
 @media (max-width: 991px) {
   .cl-about .our-mentors-spirit .cl-title {
-    font-size: 28px;
+    font-size: 20px;
   }
   .cl-about .our-mentors-spirit .group .item {
     padding: 80px 20px;
@@ -4113,7 +4158,7 @@ main {
     padding: 0 0 30px 0;
   }
   .cl-about .our-mentors-spirit .cl-title {
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 40px;
   }
   .cl-about .our-mentors-spirit .group .item {
@@ -4205,27 +4250,6 @@ main {
   }
   .cl-about .cl-achieved .time-line .item:nth-child(3) {
     width: 100%;
-  }
-}
-@media (max-width: 430px) {
-  .cl-about .our-mentors-spirit {
-    /* .group{
-      .item{
-        padding: 30px 10px;
-        dl{
-          dt{
-            font-size: 36px;
-            margin-bottom: 0;
-          }
-          dd{
-            font-size:10px;
-          }
-        }
-      }
-    } */
-  }
-  .cl-about .our-mentors-spirit .cl-title {
-    font-size: 20px;
   }
 }
 /* @media (max-width: 390px){
