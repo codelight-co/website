@@ -22,9 +22,7 @@ $(function () {
     }, 400)
 })
 $(document).ready(function(){
-    if ($(window).width() < 768) {
-        
-    }
+    new WOW().init();
 })
 document.getElementById("mc-embedded-subscribe").addEventListener("click", function () {
     var email = document.getElementById("mce-EMAIL").value;

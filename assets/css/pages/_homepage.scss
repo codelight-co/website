@@ -7,6 +7,21 @@
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
+    .deco1{
+      position: absolute;
+      bottom: 129px;
+      left: calc(50% - 560px);
+    }
+    .deco2{
+      position: absolute;
+      top: 267px;
+      right: calc(50% - 410px);
+    }
+    .deco3{
+      position: absolute;
+      bottom: 129px;
+      right: calc(50% - 617px);
+    }
     .cl-banner-image {
       position: relative;
       z-index: 2;
@@ -112,9 +127,6 @@
       .item:nth-child(3){
         padding-right: 0;
       }
-    }
-    .cl-title{
-      margin-top: 59px;
     }
     p{
       margin-bottom: 40px;
@@ -224,12 +236,12 @@
   .cl-wip-program{
     background: url("../images/wip-program-bg.jpg")no-repeat center center;
     background-size: cover;
-    padding: 80px 0;
+    padding: 80px 0 190px 0;
     .cl-title{
       font-size: 60px;
       line-height: 120%;
       color: $cl_white_color;
-      margin-bottom: 172px;
+      margin-bottom: 60px;
     }
     .cl-btn{
       a{
@@ -679,9 +691,6 @@
       .group{
         margin: -24px 0 0 0;
       }
-      .cl-title{
-        margin-top: 0;
-      }
     }
     .cl-core-values{
       .container{
@@ -879,8 +888,10 @@
       }
     }
     .cl-wip-program{
+      padding: 80px 0 160px 0;
       .cl-title{
         font-size: 36px;
+        margin-bottom: 40px;
       }
     }
     .cl-recent-events{
@@ -1038,10 +1049,10 @@
       }
     }
     .cl-wip-program{
-      padding: 40px 0;
+      padding: 40px 0 110px 0;
       .cl-title{
         font-size: 24px;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
         text-align: center;
       }
       .cl-btn{
