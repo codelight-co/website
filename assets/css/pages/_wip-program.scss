@@ -2,15 +2,15 @@
   position: relative;
   .cl-banner {
     padding: 228px 0 170px;
-    //background: linear-gradient(238.76deg, #4B84F9 -5.57%, #0C44B4 55.2%, #011240 102.34%);
-    background: url("../images/wip-program/banner.jpg")no-repeat center center,linear-gradient(238.76deg, #4B84F9 -5.57%, #0C44B4 55.2%, #011240 102.34%);
+    background: linear-gradient(238.76deg, #4B84F9 -5.57%, #0C44B4 55.2%, #011240 102.34%);
+    //background: url("../images/wip-program/banner.jpg")no-repeat center center,linear-gradient(238.76deg, #4B84F9 -5.57%, #0C44B4 55.2%, #011240 102.34%);
     background-size: cover;
     position: relative;
     overflow: hidden;
     .cl-banner-image {
       position: absolute;
-      top: -99px;
-      right: calc(50% - 1308px);
+      bottom: -60px;
+      right: calc(50% - 947px);
     }
     .cl-banner-body {
       position: relative;
@@ -137,6 +137,113 @@
       font-size: 24px;
       line-height: 36px;
       margin-bottom: 40px;
+    }
+    .map{
+      position: relative;
+      margin-left: calc(50% - 720px);
+      margin-right: calc(50% - 720px);
+      span{
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: $cl_primary_color;
+        border: 1px solid $cl_secondary_color;
+        display: inline-block;
+        -webkit-animation: ZoomInZoomOut 18s linear infinite;
+        animation-delay: calc(0.1s * var(--i));
+      }
+    }
+    @-webkit-keyframes ZoomInZoomOut {
+      0% {
+        transform: scale(1);
+      }
+      5.56% { 
+        transform: scale(1.5);
+      }
+      11.11%{
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1);
+      }
+  }
+    @for $i from 0 through 17 { 
+      span:nth-child(#{$i}) {
+        animation-delay: #{$i}s;
+      }
+    }
+    span:nth-child(1){
+      top: 212px;
+      left: 503px;
+    }
+    span:nth-child(2){
+      top: 320px;
+      left: 210px;
+    }
+    span:nth-child(3){
+      top: 366px;
+      left: 351px;
+    }
+    span:nth-child(4){
+      top: 591px;
+      left: 344px;
+    }
+    span:nth-child(5){
+      top: 610px;
+      left: 417px;
+    }
+    span:nth-child(6){
+      top: 232px;
+      left: 720px;
+    }
+    span:nth-child(7){
+      top: 277px;
+      left: 752px;
+    }
+    span:nth-child(8){
+      top: 325px;
+      left: 846px;
+    }
+    span:nth-child(9){
+      top: 377px;
+      left: 923px;
+    }
+    span:nth-child(10){
+      top: 432px;
+      left: 870px;
+    }
+    span:nth-child(11){
+      top: 496px;
+      left: 868px;
+    }
+    span:nth-child(12){
+      top: 359px;
+      left: 1151px;
+    }
+    span:nth-child(13){
+      top: 502px;
+      left: 1156px;
+    }
+    span:nth-child(14){
+      top: 519px;
+      left: 1065px;
+    }
+    span:nth-child(15){
+      top: 530px;
+      left: 1117px;
+    }
+    span:nth-child(16){
+      top: 557px;
+      left: 1113px;
+    }
+    span:nth-child(17){
+      top: 614px;
+      left: 1169px;
+    }
+    span:nth-child(18){
+      top: 634px;
+      left: 1328px;
     }
   }
   .cl-involved{
@@ -445,7 +552,7 @@
     .cl-banner {
       .cl-banner-image {
         img {
-          max-height: 420px;
+          
         }
       }
       .cl-banner-body {
@@ -569,6 +676,15 @@
   .cl-wip-program-page {
     .cl-banner {
       padding: 120px 0 60px 0;
+      .cl-banner-image {
+        bottom: 6%;
+        right: -60%;
+        width: 100%;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
       .cl-banner-body {
         .cl-banner-heading {
           font-size: 30px;
@@ -626,6 +742,78 @@
         width: 140%;
         margin-left: -20%;
         margin-right: -20%;
+        span:nth-child(1){
+          top: 23%;
+          left: 35%;
+        }
+        span:nth-child(2){
+          top: 35.5%;
+          left: 14.5%;
+        }
+        span:nth-child(3){
+          top: 40.5%;
+          left: 24.5%;
+        }
+        span:nth-child(4){
+          top: 65.5%;
+          left: 24%;
+        }
+        span:nth-child(5){
+          top: 68%;
+          left: 29%;
+        }
+        span:nth-child(6){
+          top: 25.5%;
+          left: 50%;
+        }
+        span:nth-child(7){
+          top: 30.5%;
+          left: 52%;
+        }
+        span:nth-child(8){
+          top: 36%;
+          left: 58.5%;
+        }
+        span:nth-child(9){
+          top: 41.5%;
+          left: 64%;
+        }
+        span:nth-child(10){
+          top: 48%;
+          left: 60.5%;
+        }
+        span:nth-child(11){
+          top: 55%;
+          left: 60.5%;
+        }
+        span:nth-child(12){
+          top: 39.5%;
+          left: 80%;
+        }
+        span:nth-child(13){
+          top: 57%;
+          left: 74%;
+        }
+        span:nth-child(14){
+          top: 55.5%;
+          left: 80%;
+        }
+        span:nth-child(15){
+          top: 59%;
+          left: 77.5%;
+        }
+        span:nth-child(16){
+          top: 61.5%;
+          left: 77%;
+        }
+        span:nth-child(17){
+          top: 68%;
+          left: 81%;
+        }
+        span:nth-child(18){
+          top: 634px;
+          left: 1328px;
+        }
       }
     }
     .cl-involved{
