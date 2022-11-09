@@ -237,6 +237,16 @@
       .item{
         padding: 0 0 0 40px;
         width: 36%;
+        position: relative;
+        &:before{
+          position: absolute;
+          content: "";
+          background: url("../images/line-2.png")repeat-y right top;
+          top: 103px;
+          right: 0;
+          bottom: 0;
+          width: 2px;
+        }
         .year{
           font-weight: 700;
           font-size: 36px;
@@ -254,7 +264,7 @@
           padding: 0 40px 30px 0;
           margin-bottom: 0;
           position: relative;
-          &:before{
+          /* &:before{
             position: absolute;
             content: "";
             background: url("../images/line-2.png")repeat-y right top;
@@ -262,7 +272,7 @@
             right: 0;
             bottom: 0;
             width: 2px;
-          }
+          } */
           li{
 
           }
@@ -273,6 +283,9 @@
       }
       .item:nth-child(3){
         width: 26%;
+        &:before{
+          background: none;
+        }
       }
     }
   }
@@ -355,6 +368,9 @@
         .item{
           padding: 0 0 0 20px;
           width: 38%;
+          &:before{
+            top: 90px;
+          }
           .year{
             font-size: 24px;
           }
@@ -433,6 +449,9 @@
         }
         .item{
           width: 40%;
+          &::before{
+            top: 65px;
+          }
           .year{
             font-size: 18px;
             margin-bottom: 40px;
@@ -547,6 +566,9 @@
         .item{
           width: 100%;
           padding: 30px 0 0 0;
+          &:before{
+            background: none;
+          }
           .year{
             font-size: 18px;
             margin-bottom: 20px;
