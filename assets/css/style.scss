@@ -137,6 +137,7 @@ $cl_text_title: #0E0E2C;
     bottom: -381px;
     left: calc(50% - 1180px);
     z-index: -1;
+    opacity: 0.5;
   }
   &:after{
     position: absolute;
@@ -148,6 +149,7 @@ $cl_text_title: #0E0E2C;
     top: -402px;
     right: calc(50% - 1146px);
     z-index: -1;
+    opacity: 0.5;
   }
   >*{
     position: relative;
