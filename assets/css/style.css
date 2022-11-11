@@ -4209,7 +4209,7 @@ main {
   padding: 100px 0 160px 0;
 }
 .cl-about .cl-partners .cl-title {
-  margin-bottom: 24px;
+  margin-bottom: 60px;
 }
 .cl-about .cl-partners .cl-disc {
   font-size: 24px;
@@ -4396,9 +4396,6 @@ main {
   .cl-about .cl-our-team .item dl dt {
     font-size: 20px;
   }
-  .cl-about .cl-partners .cl-title {
-    margin-bottom: 20px;
-  }
   .cl-about .cl-partners .cl-disc {
     font-size: 16px;
     line-height: 160%;
@@ -4486,6 +4483,9 @@ main {
     /* .slider-partners{
       grid-template-columns:48% 48%;
     } */
+  }
+  .cl-about .cl-partners .cl-title {
+    margin-bottom: 40px;
   }
   .cl-about .cl-partners .cl-disc {
     font-size: 14px;
