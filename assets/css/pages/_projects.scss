@@ -19,8 +19,20 @@
     }
   }
   .cl-projects-list {
+    .cl-project-item-wrap {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      border-top: 1px solid #9fa6a9;
+      .cl-project-thumb {
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
     .cl-project-item {
-      border-top: 1px solid #9FA6A9;
       padding-top: 80px;
       padding-bottom: 80px;
       .cl-project-header {
@@ -36,6 +48,9 @@
             height: 100%;
             object-fit: contain;
           }
+          &.cl-scalar-logo {
+            width: 300px;
+          }
         }
         .cl-project-name {
           font-weight: 700;
@@ -50,7 +65,7 @@
         line-height: 180%;
         color: #656c73;
         margin-bottom: 45px;
-        p{
+        p {
           margin-bottom: 0;
         }
       }
@@ -71,10 +86,10 @@
     background-image: none;
     .cl-projects-banner {
       padding-bottom: 80px;
-      .cl-projects-title{
+      .cl-projects-title {
         font-size: 40px;
       }
-      .cl-projects-description{
+      .cl-projects-description {
         font-size: 18px;
         line-height: 160%;
       }
@@ -84,22 +99,22 @@
         padding: 40px 0;
         .cl-project-header {
           margin-bottom: 24px;
-          .cl-project-logo{
+          .cl-project-logo {
             width: 90px;
             height: 90px;
           }
-          .cl-project-name{
+          .cl-project-name {
             font-size: 40px;
             line-height: 160%;
             margin-left: 20px;
           }
         }
-        .cl-project-body{
+        .cl-project-body {
           font-size: 18px;
           line-height: 160%;
           margin-bottom: 30px;
         }
-        .cl-project-action{
+        .cl-project-action {
           font-size: 18px;
           line-height: 160%;
         }
@@ -135,11 +150,29 @@
             font-size: 24px;
           }
         }
-        .cl-project-body{
+        .cl-project-body {
           font-size: 14px;
         }
-        .cl-project-action{
+        .cl-project-action {
           font-size: 14px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .cl-projects {
+    .cl-projects-list {
+      .cl-project-item-wrap {
+        flex-direction: column;
+        gap: 0;
+        .cl-project-thumb {
+          padding: 0 20px;
+          margin-bottom: 40px;
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
       }
     }
