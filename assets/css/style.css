@@ -2371,6 +2371,9 @@ main {
     width: 100%;
     height: auto;
   }
+  .cl-projects .cl-projects-list .cl-project-item-wrap .cl-project-header .cl-project-logo.cl-scalar-logo {
+    width: 200px;
+  }
 }
 .cl-internship {
   background-color: #f9fafb;
@@ -3606,6 +3609,7 @@ main {
 }
 .cl-wip-program-page .cl-activities .activities-slider img {
   margin: 0 10px;
+  height: auto;
 }
 
 @media (max-width: 1440px) {
