@@ -99,12 +99,15 @@
     .group {
       display: flex;
       justify-content: center;
-      padding: 24px;
+      padding: 10px 24px;
       background: $cl_white_color;
       box-shadow: 0px 2px 9px 4px rgba(145, 145, 145, 0.25);
-      margin: -24px 20px 0 20px;
-      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: -20px;
+      position: absolute;
       z-index: 1;
+      width: fit-content;
       .item {
         text-align: center;
         dl {
@@ -114,13 +117,11 @@
           margin-bottom: 0;
           dt {
             font-weight: 600;
-            font-size: 35px;
-            line-height: 20px;
+            font-size: 16px;
           }
           dd {
             font-weight: 700;
-            font-size: 40px;
-            line-height: 55px;
+            font-size: 20px;
             color: $cl_text_title;
             margin-bottom: 0;
             border-left: 3px solid #0e0e2c;
@@ -235,6 +236,77 @@
         position: absolute;
         top: -318px;
         right: 0;
+      }
+    }
+
+    .core-group {
+      display: flex;
+      .core-item-image {
+        position: relative;
+        img {
+          width: 100%;
+          transition: opacity 0.5s ease; /* Add transition for opacity */
+        }
+        span {
+          position: absolute;
+          display: none;
+          color: #0e0e2c;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 34px;
+          word-wrap: break-word;
+        }
+        img:nth-child(1) {
+          position: relative;
+        }
+        img:nth-child(2) {
+          position: absolute;
+          left: 0;
+          opacity: 0; /* Set opacity to 0 by default */
+        }
+        &:hover {
+          img:nth-child(1) {
+            opacity: 0; /* Set opacity to 0 when hovering */
+          }
+          img:nth-child(2) {
+            opacity: 1; /* Set opacity to 1 when hovering */
+          }
+
+          span {
+            display: inline;
+          }
+        }
+      }
+
+      .core-item:nth-child(1) {
+        span {
+          right: 30%;
+          bottom: 27%;
+        }
+      }
+      .core-item:nth-child(2) {
+        span {
+          right: 20%;
+          bottom: 0;
+        }
+      }
+      .core-item:nth-child(3) {
+        span {
+          right: 40%;
+          bottom: 45%;
+        }
+      }
+      .core-item:nth-child(4) {
+        span {
+          right: 25%;
+          bottom: 10%;
+        }
+      }
+      .core-item:nth-child(5) {
+        span {
+          right: 20%;
+          bottom: 23%;
+        }
       }
     }
   }
@@ -562,8 +634,14 @@
           }
         }
       }
-      .slide {
-        padding: 0 23px;
+      .slick-track {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        .slide {
+          padding: 0 23px;
+          max-width: 400px;
+        }
       }
       .cl-project-item {
         margin-bottom: 50px;
@@ -756,8 +834,7 @@
         .item {
           dl {
             dt {
-              font-size: 24px;
-              line-height: 16px;
+              font-size: 16px;
             }
             dd {
               font-size: 30px;
@@ -919,6 +996,45 @@
         }
         .item:nth-child(5) {
           top: -200px;
+        }
+      }
+
+      .core-group {
+        .core-item-image {
+          span {
+            font-size: 16px;
+          }
+        }
+
+        .core-item:nth-child(1) {
+          span {
+            right: 30%;
+            bottom: 10%;
+          }
+        }
+        .core-item:nth-child(2) {
+          span {
+            right: -10%;
+            bottom: -8%;
+          }
+        }
+        .core-item:nth-child(3) {
+          span {
+            right: 30%;
+            bottom: 35%;
+          }
+        }
+        .core-item:nth-child(4) {
+          span {
+            right: 15%;
+            bottom: 3%;
+          }
+        }
+        .core-item:nth-child(5) {
+          span {
+            right: 5%;
+            bottom: 10%;
+          }
         }
       }
     }
@@ -1175,7 +1291,7 @@
     }
   }
 }
-@media (max-width: 414px) {
+@media (max-width: 426px) {
   .cl-homepage {
     .cl-core-values {
       .container {
@@ -1207,6 +1323,15 @@
         }
         .item:nth-child(5) {
           top: -110px;
+        }
+      }
+
+      .core-group {
+        .core-item-image {
+          span {
+            font-size: 12px;
+            line-height: normal;
+          }
         }
       }
     }
