@@ -326,6 +326,7 @@ main {
   }
 }
 .cl-navbar {
+  transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.1);
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
@@ -422,7 +423,7 @@ main {
   background-color: #fff;
 }
 .cl-navbar.cl-dark.sticky {
-  background: linear-gradient(229.57deg, #7D17FF 29%, #0085FF 88.38%);
+  background: linear-gradient(229.57deg, #7d17ff 29%, #0085ff 88.38%);
 }
 .cl-navbar.none-bg {
   background: none;
@@ -452,7 +453,7 @@ main {
 }
 @media (max-width: 767px) {
   .cl-navbar {
-    background: linear-gradient(229.57deg, #7D17FF 29%, #0085FF 88.38%);
+    background: linear-gradient(229.57deg, #7d17ff 29%, #0085ff 88.38%);
     -webkit-backdrop-filter: blur(14px);
             backdrop-filter: blur(14px);
     padding-bottom: 10px;
@@ -492,7 +493,7 @@ main {
     background: linear-gradient(180deg, #f5fcff -18.52%, #e4d6eb); */
   }
   .cl-navbar.sticky {
-    background: linear-gradient(229.57deg, #7D17FF 29%, #0085FF 88.38%);
+    background: linear-gradient(229.57deg, #7d17ff 29%, #0085ff 88.38%);
     -webkit-backdrop-filter: blur(14px);
             backdrop-filter: blur(14px);
   }
@@ -510,7 +511,7 @@ main {
 .cl-footer {
   padding-top: 65px;
   padding-bottom: 16px;
-  background: linear-gradient(229.57deg, #7D17FF 29%, #0085FF 88.38%);
+  background: linear-gradient(229.57deg, #7d17ff 29%, #0085ff 88.38%);
   line-height: 33px;
   color: #fafafa;
 }
@@ -542,6 +543,7 @@ main {
 }
 .cl-footer ul {
   flex-direction: column;
+  gap: 8px;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -667,6 +669,9 @@ main {
   color: #656c73;
   text-align: center;
 }
+.cl-homepage .cl-banner .cl-banner-body .cl-banner-content span {
+  font-weight: 700;
+}
 .cl-homepage .cl-banner .cl-banner-body .cl-banner-action a {
   display: inline-flex;
   padding: 12px 66px 17px;
@@ -713,6 +718,7 @@ main {
 .cl-homepage .cl-about .photo img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 .cl-homepage .cl-about .group {
   display: flex;
@@ -740,10 +746,11 @@ main {
 .cl-homepage .cl-about .group .item dl dt {
   font-weight: 600;
   font-size: 16px;
+  text-align: start;
 }
 .cl-homepage .cl-about .group .item dl dd {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 40px;
   color: #0e0e2c;
   margin-bottom: 0;
   border-left: 3px solid #0e0e2c;
@@ -751,6 +758,7 @@ main {
 }
 .cl-homepage .cl-about p {
   margin-bottom: 40px;
+  text-align: justify;
 }
 .cl-homepage .cl-core-values {
   background: #fafafa;
@@ -1363,8 +1371,8 @@ main {
 }
 @media (max-width: 1299px) {
   .cl-homepage .cl-about .group .item dl dt {
-    font-size: 30px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 26px;
   }
   .cl-homepage .cl-about .group .item dl dd {
     font-size: 38px;
@@ -1407,6 +1415,26 @@ main {
   }
   .cl-homepage .cl-core-values .group .item:nth-child(5) {
     top: -260px;
+  }
+  .cl-homepage .cl-core-values .core-group .core-item:nth-child(1) span {
+    right: 10%;
+    bottom: 23%;
+  }
+  .cl-homepage .cl-core-values .core-group .core-item:nth-child(2) span {
+    right: -4%;
+    bottom: -15px;
+  }
+  .cl-homepage .cl-core-values .core-group .core-item:nth-child(3) span {
+    right: 23%;
+    bottom: 40%;
+  }
+  .cl-homepage .cl-core-values .core-group .core-item:nth-child(4) span {
+    right: 25%;
+    bottom: 10%;
+  }
+  .cl-homepage .cl-core-values .core-group .core-item:nth-child(5) span {
+    right: 5%;
+    bottom: 18%;
   }
   .cl-homepage .cl-our-projects .cl-project-description {
     font-size: 16px;
@@ -1591,7 +1619,7 @@ main {
     width: 100%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .cl-homepage .cl-banner {
     padding: 180px 0 120px 0;
     background-position: center right 42%;
@@ -1621,6 +1649,9 @@ main {
   .cl-homepage .cl-about .cl-btn {
     text-align: center;
     margin-top: 20px;
+  }
+  .cl-homepage .cl-about .about-us-desc {
+    padding-top: 40px;
   }
   .cl-homepage .cl-core-values .container {
     padding: 20px 0 80px 0;
@@ -1656,6 +1687,10 @@ main {
   }
   .cl-homepage .cl-core-values .group .item:nth-child(5) {
     top: -140px;
+  }
+  .cl-homepage .cl-core-values .core-group .core-item-image span {
+    font-size: 12px;
+    line-height: 25px;
   }
   .cl-homepage .cl-wip-program {
     padding: 40px 0 110px 0;
@@ -1756,6 +1791,17 @@ main {
   }
 }
 @media (max-width: 426px) {
+  .cl-homepage .cl-about .group {
+    padding: 8px;
+  }
+  .cl-homepage .cl-about .group .item dl dt {
+    font-size: 10px;
+    line-height: 15px;
+  }
+  .cl-homepage .cl-about .group .item dl dd {
+    font-size: 18px;
+    line-height: 20px;
+  }
   .cl-homepage .cl-core-values .container {
     background-size: 130%;
   }
@@ -1828,11 +1874,26 @@ main {
   .cl-homepage .cl-core-values .group .item:nth-child(4) {
     right: 52px;
   }
+  .cl-homepage .cl-core-values .core-group .core-item:nth-child(1) span {
+    bottom: 0;
+  }
+  .cl-homepage .cl-core-values .core-group .core-item:nth-child(2) span {
+    bottom: -37px;
+  }
+  .cl-homepage .cl-core-values .core-group .core-item:nth-child(3) span {
+    right: 5%;
+    bottom: 30%;
+  }
+  .cl-homepage .cl-core-values .core-group .core-item:nth-child(4) span {
+    right: 0;
+    bottom: 0;
+  }
+  .cl-homepage .cl-core-values .core-group .core-item:nth-child(5) span {
+    right: 4%;
+    bottom: 10%;
+  }
 }
 @media (max-width: 360px) {
-  .cl-homepage .cl-about .group {
-    padding: 20px;
-  }
   .cl-homepage .cl-about .group .item {
     padding: 0 18px;
   }
@@ -2324,12 +2385,20 @@ main {
   overflow: hidden;
 }
 .cl-projects .cl-projects-list .cl-project-item-wrap .cl-project-thumb {
-  border: 12px solid #f5f5f5;
-  border-radius: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.cl-projects .cl-projects-list .cl-project-item-wrap .cl-project-thumb img {
   transition: all 0.5s ease-in-out;
 }
-.cl-projects .cl-projects-list .cl-project-item-wrap .cl-project-thumb:hover {
+.cl-projects .cl-projects-list .cl-project-item-wrap .cl-project-thumb:hover img {
   transform: scale(1.1);
+}
+.cl-projects .cl-projects-list .cl-project-item-wrap .cl-project-item {
+  flex: 1;
+}
+.cl-projects .cl-projects-list .cl-project-item-wrap:nth-child(1) {
+  border-top: 0;
 }
 .cl-projects .cl-projects-list .cl-project-item {
   padding-top: 80px;
@@ -2338,7 +2407,6 @@ main {
 .cl-projects .cl-projects-list .cl-project-item .cl-project-header {
   display: flex;
   align-items: center;
-  margin-bottom: 32px;
 }
 .cl-projects .cl-projects-list .cl-project-item .cl-project-header .cl-project-logo {
   width: 122px;
@@ -2372,6 +2440,7 @@ main {
 }
 .cl-projects .cl-projects-list .cl-project-item .cl-project-body p {
   margin-bottom: 0;
+  text-align: justify;
 }
 .cl-projects .cl-projects-list .cl-project-item .cl-project-action {
   font-weight: 400;
@@ -2435,6 +2504,10 @@ main {
   .cl-projects .cl-projects-banner .cl-projects-description {
     font-size: 14px;
   }
+  .cl-projects .cl-projects-list .cl-project-item-wrap {
+    flex-direction: column;
+    gap: 0;
+  }
   .cl-projects .cl-projects-list .cl-project-item .cl-project-header {
     margin-bottom: 16px;
   }
@@ -2455,10 +2528,6 @@ main {
   }
 }
 @media (max-width: 450px) {
-  .cl-projects .cl-projects-list .cl-project-item-wrap {
-    flex-direction: column;
-    gap: 0;
-  }
   .cl-projects .cl-projects-list .cl-project-item-wrap .cl-project-thumb {
     padding: 0 20px;
     margin-bottom: 40px;
@@ -3257,6 +3326,13 @@ main {
   height: 100%;
   width: 100%;
 }
+.cl-wip-program-page .cl-banner .cl-banner-absolute {
+  position: absolute;
+  top: 20%;
+  right: -30%;
+  width: 100%;
+  height: 100%;
+}
 .cl-wip-program-page .cl-banner .cl-banner-body {
   position: relative;
   z-index: 2;
@@ -3273,6 +3349,9 @@ main {
 .cl-wip-program-page .cl-banner .cl-banner-body .cl-banner-content {
   color: #fff;
   margin-bottom: 60px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
 }
 .cl-wip-program-page .cl-banner .cl-banner-body .cl-btn a {
   padding: 14px 55px;
@@ -3296,7 +3375,7 @@ main {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  border-radius: 5%;
+  border-radius: 8px;
   cursor: pointer;
 }
 .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content {
@@ -3307,12 +3386,13 @@ main {
   gap: 100px;
   background-color: #f9fafb;
   align-self: center;
-  border-radius: 25px;
+  border-radius: 12px;
+  padding: 35px 40px;
   cursor: pointer;
 }
 .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-content-quote {
   display: flex;
-  gap: 45px;
+  gap: 30px;
 }
 .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-content-quote img {
   width: 50px;
@@ -3324,6 +3404,7 @@ main {
   font-size: 24px;
   line-height: 60px;
   color: #0e0e2c;
+  text-align: justify;
 }
 .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-info {
   display: flex;
@@ -3628,7 +3709,7 @@ main {
 .cl-wip-program-page .cl-involved .cl-involved-flex .box {
   width: 31%;
   border: 2px solid #e2e2e2;
-  border-radius: 12px;
+  border-radius: 10px;
   text-align: center;
   padding-bottom: 56px;
   position: relative;
@@ -3648,9 +3729,9 @@ main {
   padding: 0 31px;
 }
 .cl-wip-program-page .cl-involved .cl-involved-flex .box dl dt {
-  font-weight: 800;
-  font-size: 32px;
-  line-height: 44px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
   text-align: center;
   color: #0e0e2c;
   margin-bottom: 16px;
@@ -4098,7 +4179,7 @@ main {
     width: 48vw !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .cl-wip-program-page .cl-banner {
     padding: 120px 0 60px 0;
   }
@@ -4117,6 +4198,9 @@ main {
   .cl-wip-program-page .cl-banner .cl-banner-body .cl-banner-action a {
     padding: 12px 60px;
     font-size: 18px;
+  }
+  .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box {
+    flex-direction: column;
   }
   .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box img {
     height: 50%;
@@ -4322,7 +4406,6 @@ main {
     font-size: 24px;
   }
   .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box {
-    flex-direction: column;
     gap: 20px;
   }
   .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box img {
@@ -4330,7 +4413,7 @@ main {
   }
   .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content {
     max-width: 500px;
-    padding: 0 65px;
+    padding: 10px 65px;
     gap: 10px;
   }
   .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-content-quote {
@@ -4338,7 +4421,7 @@ main {
   }
   .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-content-quote img {
     width: 20px;
-    height: 20px;
+    height: 25px;
   }
   .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-content-quote p {
     font-size: 12px;
@@ -4409,6 +4492,13 @@ main {
   .cl-wip-program-page .cl-mentors .cl-mentors-frame .cl-mentors-content p {
     font-size: 14px;
   }
+  .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content {
+    padding: 10px 80px;
+  }
+  .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-content-quote p {
+    font-size: 12px;
+    line-height: 20px;
+  }
   .cl-wip-program-page .cl-involved .cl-involved-flex .box dl dd {
     min-height: auto;
   }
@@ -4466,6 +4556,8 @@ main {
   text-align: center;
   color: #fff;
   margin-bottom: 60px;
+  font-size: 20px;
+  font-weight: 400;
 }
 .cl-about .cl-banner .cl-banner-body .cl-btn {
   text-align: center;
@@ -4516,7 +4608,7 @@ main {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 20px;
+  border-radius: 8px;
   flex: 1;
 }
 .cl-about .cl-welcome .cl-welcome_desc-wrap .cl-welcome_desc p {
@@ -4533,6 +4625,13 @@ main {
 .cl-about .our-mentors-spirit {
   padding: 100px 0 0 0;
 }
+.cl-about .our-mentors-spirit p {
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 30px;
+  line-height: 40.8px;
+  letter-spacing: 0.24px;
+}
 .cl-about .our-mentors-spirit .cl-title {
   font-weight: 800;
   font-size: 52px;
@@ -4546,7 +4645,7 @@ main {
 }
 .cl-about .our-mentors-spirit .group .item {
   background: #f9fafb;
-  border-radius: 12px;
+  border-radius: 8px;
   text-align: center;
   width: 32%;
   padding: 113px 20px;
@@ -4565,7 +4664,7 @@ main {
   border-radius: 50%;
   transform: translateX(-50%) translateY(-50%);
   background: #f9fafb;
-  transition: background-color 0.15s 0.25s, width 0.4s, left 0.4s, padding-bottom 0.4s, top 0.4s;
+  transition: background-color 0.5s 0.5s, width 1s, left 1s, padding-bottom 1s, top 1s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   z-index: 1;
 }
@@ -4669,7 +4768,7 @@ main {
   line-height: 130%;
   text-align: center;
   color: #0e0e2c;
-  margin-bottom: 24px;
+  margin-bottom: 72px;
 }
 .cl-about .cl-partners .slider-partners {
   padding-left: 0;
@@ -4787,9 +4886,6 @@ main {
   .cl-about .cl-welcome .cl-welcome_desc-wrap .cl-welcome_desc p {
     font-size: 16px;
   }
-  .cl-about .our-mentors-spirit .cl-title {
-    font-size: 32px;
-  }
   .cl-about .our-mentors-spirit .group .item dl dt {
     font-size: 66px;
     line-height: 110%;
@@ -4816,9 +4912,6 @@ main {
   }
   .cl-about .cl-welcome .cl-welcome_desc-wrap .cl-welcome_desc p {
     line-height: normal;
-  }
-  .cl-about .our-mentors-spirit .cl-title {
-    font-size: 28px;
   }
   .cl-about .our-mentors-spirit .group .item {
     padding: 90px 20px;
@@ -4962,7 +5055,7 @@ main {
     padding: 60px 0 30px 0;
   }
   .cl-about .our-mentors-spirit .cl-title {
-    font-size: 18px;
+    font-size: 35px;
     margin-bottom: 40px;
   }
   .cl-about .our-mentors-spirit .group .item {
@@ -5056,23 +5149,26 @@ main {
   }
 }
 @media (max-width: 430px) {
-  .cl-welcome .cl-title {
+  .cl-about .cl-welcome .cl-title {
     flex-direction: column;
     font-size: 18px;
     margin-bottom: 25px;
   }
-  .cl-welcome .cl-title .cl-logo {
+  .cl-about .cl-welcome .cl-title .cl-logo {
     width: 180px;
   }
-  .cl-welcome p {
+  .cl-about .cl-welcome p {
     font-size: 15px;
   }
-  .cl-welcome .cl-welcome_desc-wrap {
+  .cl-about .cl-welcome .cl-welcome_desc-wrap {
     padding: 0 20px;
   }
-  .cl-welcome .cl-welcome_desc-wrap .cl-welcome_desc {
+  .cl-about .cl-welcome .cl-welcome_desc-wrap .cl-welcome_desc {
     flex-direction: column;
     align-items: center;
+  }
+  .cl-about .our-mentors-spirit p {
+    font-size: 18px;
   }
 }
 /* @media (max-width: 390px){

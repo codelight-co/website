@@ -23,6 +23,8 @@
         text-align: center;
         color: $cl_white_color;
         margin-bottom: 60px;
+        font-size: 20px;
+        font-weight: 400;
       }
       .cl-btn {
         text-align: center;
@@ -72,7 +74,7 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
-          border-radius: 20px;
+          border-radius: 8px;
           flex: 1;
         }
         p {
@@ -91,6 +93,13 @@
   }
   .our-mentors-spirit {
     padding: 100px 0 0 0;
+    p {
+      font-size: 24px;
+      font-weight: 400;
+      padding-bottom: 30px;
+      line-height: 40.8px;
+      letter-spacing: 0.24px;
+    }
     .cl-title {
       font-weight: 800;
       font-size: 52px;
@@ -103,7 +112,7 @@
       justify-content: space-between;
       .item {
         background: #f9fafb;
-        border-radius: 12px;
+        border-radius: 8px;
         text-align: center;
         width: 32%;
         padding: 113px 20px;
@@ -121,8 +130,8 @@
           border-radius: 50%;
           transform: translateX(-50%) translateY(-50%);
           background: #f9fafb;
-          transition: background-color 0.15s 0.25s, width 0.4s, left 0.4s,
-            padding-bottom 0.4s, top 0.4s;
+          transition: background-color 0.5s 0.5s, width 1s, left 1s,
+            padding-bottom 1s, top 1s;
           transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
           z-index: 1;
         }
@@ -244,7 +253,7 @@
       line-height: 130%;
       text-align: center;
       color: $cl_text_title;
-      margin-bottom: 24px;
+      margin-bottom: 72px;
     }
     .slider-partners {
       padding-left: 0;
@@ -374,9 +383,6 @@
       }
     }
     .our-mentors-spirit {
-      .cl-title {
-        font-size: 32px;
-      }
       .group {
         .item {
           dl {
@@ -424,9 +430,6 @@
       }
     }
     .our-mentors-spirit {
-      .cl-title {
-        font-size: 28px;
-      }
       .group {
         .item {
           padding: 90px 20px;
@@ -633,7 +636,7 @@
     .our-mentors-spirit {
       padding: 60px 0 30px 0;
       .cl-title {
-        font-size: 18px;
+        font-size: 35px;
         margin-bottom: 40px;
       }
       .group {
@@ -737,24 +740,32 @@
 }
 
 @media (max-width: 430px) {
-  .cl-welcome {
-    .cl-title {
-      flex-direction: column;
-      font-size: 18px;
-      margin-bottom: 25px;
-      .cl-logo {
-        width: 180px;
+  .cl-about {
+    .cl-welcome {
+      .cl-title {
+        flex-direction: column;
+        font-size: 18px;
+        margin-bottom: 25px;
+        .cl-logo {
+          width: 180px;
+        }
+      }
+      p {
+        font-size: 15px;
+      }
+
+      .cl-welcome_desc-wrap {
+        padding: 0 20px;
+        .cl-welcome_desc {
+          flex-direction: column;
+          align-items: center;
+        }
       }
     }
-    p {
-      font-size: 15px;
-    }
 
-    .cl-welcome_desc-wrap {
-      padding: 0 20px;
-      .cl-welcome_desc {
-        flex-direction: column;
-        align-items: center;
+    .our-mentors-spirit {
+      p {
+        font-size: 18px;
       }
     }
   }

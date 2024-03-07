@@ -1,7 +1,7 @@
 .cl-footer {
   padding-top: 65px;
   padding-bottom: 16px;
-  background: linear-gradient(229.57deg, #7D17FF 29%, #0085FF 88.38%);
+  background: linear-gradient(229.57deg, #7d17ff 29%, #0085ff 88.38%);
   line-height: 33px;
   color: $cl_light_color;
   .cl-footer-logo {
@@ -34,6 +34,7 @@
   }
   ul {
     flex-direction: column;
+    gap: 8px;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
@@ -56,7 +57,7 @@
     }
   }
   .cl-footer-bottom {
-    padding-top:45px;
+    padding-top: 45px;
     font-size: 12px;
     line-height: 16px;
     color: $cl_white_color;
@@ -82,20 +83,20 @@
 @media (max-width: 767px) {
   .cl-footer {
     line-height: 160%;
-    .cl-footer-logo{
+    .cl-footer-logo {
       margin-bottom: 30px;
       .img-fluid {
         height: 32px;
       }
     }
-    .cl-footer-title{
+    .cl-footer-title {
       font-size: 20px;
       line-height: 24px;
     }
-    .cl-footer-body{
+    .cl-footer-body {
       line-height: 160%;
     }
-    .cl-footer-address{
+    .cl-footer-address {
       margin-bottom: 8px;
       svg {
         margin-right: 8px;

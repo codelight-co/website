@@ -1,4 +1,5 @@
 .cl-navbar {
+  transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2px);
   padding: 46px 0 22px 0;
@@ -49,12 +50,12 @@
         background-color: $cl_text_title;
         transition: $cl_transition;
       }
-      &.active,&:hover {
+      &.active,
+      &:hover {
         &::before {
           width: 100%;
         }
       }
-      
     }
   }
   .cl-logo-light {
@@ -76,13 +77,13 @@
     animation: slide-down 0.5s; */
     padding-top: 10px;
     padding-bottom: 10px;
-    .navbar-nav {
-      .cl-header-cta {
-        .nav-link {
-          //padding: 10px 30px;
-        }
-      }
-    }
+    // .navbar-nav {
+    //   .cl-header-cta {
+    //     .nav-link {
+    //       //padding: 10px 30px;
+    //     }
+    //   }
+    // }
   }
   &.cl-dark {
     background: rgba(255, 255, 255, 0.1);
@@ -102,16 +103,16 @@
       }
       .nav-link {
         color: $cl_white_color;
-        &::before{
+        &::before {
           background-color: $cl_white_color;
         }
       }
     }
     &.sticky {
-      background: linear-gradient(229.57deg, #7D17FF 29%, #0085FF 88.38%);
+      background: linear-gradient(229.57deg, #7d17ff 29%, #0085ff 88.38%);
     }
   }
-  &.none-bg{
+  &.none-bg {
     background: none;
   }
 }
@@ -156,7 +157,7 @@
 
 @media (max-width: 767px) {
   .cl-navbar {
-    background: linear-gradient(229.57deg, #7D17FF 29%, #0085FF 88.38%);
+    background: linear-gradient(229.57deg, #7d17ff 29%, #0085ff 88.38%);
     backdrop-filter: blur(14px);
     padding-bottom: 10px;
     padding-top: 10px;
@@ -195,8 +196,8 @@
         }
       }
     }
-    &.sticky{
-      background: linear-gradient(229.57deg, #7D17FF 29%, #0085FF 88.38%);
+    &.sticky {
+      background: linear-gradient(229.57deg, #7d17ff 29%, #0085ff 88.38%);
       backdrop-filter: blur(14px);
     }
   }

@@ -43,6 +43,9 @@
         line-height: 34px;
         color: #656c73;
         text-align: center;
+        span {
+          font-weight: 700;
+        }
       }
       .cl-banner-action {
         a {
@@ -94,6 +97,7 @@
       img {
         width: 100%;
         height: auto;
+        border-radius: 10px;
       }
     }
     .group {
@@ -118,10 +122,11 @@
           dt {
             font-weight: 600;
             font-size: 16px;
+            text-align: start;
           }
           dd {
             font-weight: 700;
-            font-size: 20px;
+            font-size: 40px;
             color: $cl_text_title;
             margin-bottom: 0;
             border-left: 3px solid #0e0e2c;
@@ -132,6 +137,7 @@
     }
     p {
       margin-bottom: 40px;
+      text-align: justify;
     }
   }
   .cl-core-values {
@@ -814,8 +820,8 @@
         .item {
           dl {
             dt {
-              font-size: 30px;
-              line-height: 22px;
+              font-size: 20px;
+              line-height: 26px;
             }
             dd {
               font-size: 38px;
@@ -874,6 +880,39 @@
         }
         .item:nth-child(5) {
           top: -260px;
+        }
+      }
+
+      .core-group {
+        .core-item:nth-child(1) {
+          span {
+            right: 10%;
+            bottom: 23%;
+          }
+        }
+        .core-item:nth-child(2) {
+          span {
+            right: -4%;
+            bottom: -15px;
+          }
+        }
+        .core-item:nth-child(3) {
+          span {
+            right: 23%;
+            bottom: 40%;
+          }
+        }
+        .core-item:nth-child(4) {
+          span {
+            right: 25%;
+            bottom: 10%;
+          }
+        }
+        .core-item:nth-child(5) {
+          span {
+            right: 5%;
+            bottom: 18%;
+          }
         }
       }
     }
@@ -1110,7 +1149,7 @@
     }
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .cl-homepage {
     .cl-banner {
       padding: 180px 0 120px 0;
@@ -1144,6 +1183,10 @@
       .cl-btn {
         text-align: center;
         margin-top: 20px;
+      }
+
+      .about-us-desc {
+        padding-top: 40px;
       }
     }
     .cl-core-values {
@@ -1182,6 +1225,15 @@
         }
         .item:nth-child(5) {
           top: -140px;
+        }
+      }
+
+      .core-group {
+        .core-item-image {
+          span {
+            font-size: 12px;
+            line-height: 25px;
+          }
         }
       }
     }
@@ -1293,6 +1345,24 @@
 }
 @media (max-width: 426px) {
   .cl-homepage {
+    .cl-about {
+      .group {
+        padding: 8px;
+        .item {
+          dl {
+            dt {
+              font-size: 10px;
+              line-height: 15px;
+            }
+            dd {
+              font-size: 18px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+
     .cl-core-values {
       .container {
         background-size: 130%;
@@ -1385,6 +1455,37 @@
           right: 52px;
         }
       }
+
+      .core-group {
+        .core-item:nth-child(1) {
+          span {
+            bottom: 0;
+          }
+        }
+        .core-item:nth-child(2) {
+          span {
+            bottom: -37px;
+          }
+        }
+        .core-item:nth-child(3) {
+          span {
+            right: 5%;
+            bottom: 30%;
+          }
+        }
+        .core-item:nth-child(4) {
+          span {
+            right: 0;
+            bottom: 0;
+          }
+        }
+        .core-item:nth-child(5) {
+          span {
+            right: 4%;
+            bottom: 10%;
+          }
+        }
+      }
     }
   }
 }
@@ -1392,7 +1493,6 @@
   .cl-homepage {
     .cl-about {
       .group {
-        padding: 20px;
         .item {
           padding: 0 18px;
         }
