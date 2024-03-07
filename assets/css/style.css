@@ -3367,11 +3367,10 @@ main {
 }
 .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box {
   display: flex;
-  align-items: center;
+  align-items: end;
 }
 .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box img {
   z-index: 1;
-  width: 50%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -3380,23 +3379,17 @@ main {
 }
 .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
+  align-items: start;
   background-color: #f9fafb;
-  align-self: center;
   border-radius: 12px;
-  padding: 35px 40px;
+  padding: 20px 40px;
+  gap: 15px;
   cursor: pointer;
 }
 .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-content-quote {
   display: flex;
-  gap: 30px;
-}
-.cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-content-quote img {
-  width: 50px;
-  height: 50px;
+  flex-direction: column;
+  gap: 20px;
 }
 .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-content-quote p {
   margin-bottom: 0;
@@ -3410,12 +3403,6 @@ main {
   display: flex;
   align-items: center;
   gap: 30px;
-}
-.cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-info img {
-  width: 50%;
-  height: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-info dl {
   margin-bottom: 0;
@@ -4201,11 +4188,13 @@ main {
   }
   .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box {
     flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
   }
   .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box img {
     height: 50%;
   }
-  .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-content-quote img {
+  .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content img {
     width: 30px;
     height: 30px;
   }
@@ -4216,7 +4205,7 @@ main {
     height: 100% !important;
   }
   .cl-wip-program-page .cl-staffs .cl-staffs-slider .slick-track .slick-slide {
-    padding: 0 450px;
+    padding: 40px 450px;
   }
   .cl-wip-program-page .cl-staffs .cl-staffs-slider .slick-list {
     height: 360px !important;
@@ -4408,20 +4397,17 @@ main {
   .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box {
     gap: 20px;
   }
-  .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box img {
-    height: 50%;
-  }
   .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content {
     max-width: 500px;
     padding: 10px 65px;
     gap: 10px;
   }
-  .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-content-quote {
-    gap: 10px;
-  }
-  .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-content-quote img {
+  .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content img {
     width: 20px;
     height: 25px;
+  }
+  .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-content-quote {
+    gap: 10px;
   }
   .cl-wip-program-page .cl-staffs .cl-staffs-slider .cl-staffs-box .cl-staffs-content .cl-staffs-content-quote p {
     font-size: 12px;

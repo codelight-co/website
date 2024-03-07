@@ -62,10 +62,9 @@
       display: flex;
       .cl-staffs-box {
         display: flex;
-        align-items: center;
+        align-items: end;
         img {
           z-index: 1;
-          width: 50%;
           height: 100%;
           object-fit: contain;
           border-radius: 8px;
@@ -73,22 +72,20 @@
         }
         .cl-staffs-content {
           display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 100px;
+          align-items: start;
           background-color: #f9fafb;
-          align-self: center;
           border-radius: 12px;
-          padding: 35px 40px;
+          padding: 20px 40px;
+          gap: 15px;
           cursor: pointer;
+          // img {
+          //   width: 28px;
+          //   height: 30px;
+          // }
           .cl-staffs-content-quote {
             display: flex;
-            gap: 30px;
-            img {
-              width: 50px;
-              height: 50px;
-            }
+            flex-direction: column;
+            gap: 20px;
             p {
               margin-bottom: 0;
               font-weight: 400;
@@ -102,11 +99,6 @@
             display: flex;
             align-items: center;
             gap: 30px;
-            img {
-              width: 50%;
-              height: 50%;
-              object-fit: cover;
-            }
             dl {
               margin-bottom: 0;
               display: flex;
@@ -1026,15 +1018,17 @@
       .cl-staffs-slider {
         .cl-staffs-box {
           flex-direction: column;
+          align-items: center;
+          padding-top: 40px;
           img {
             height: 50%;
           }
           .cl-staffs-content {
+            img {
+              width: 30px;
+              height: 30px;
+            }
             .cl-staffs-content-quote {
-              img {
-                width: 30px;
-                height: 30px;
-              }
               p {
                 line-height: 28px;
               }
@@ -1044,7 +1038,7 @@
         .slick-track {
           height: 100% !important;
           .slick-slide {
-            padding: 0 450px;
+            padding: 40px 450px;
           }
         }
         .slick-list {
@@ -1248,19 +1242,16 @@
         }
         .cl-staffs-box {
           gap: 20px;
-          img {
-            height: 50%;
-          }
           .cl-staffs-content {
             max-width: 500px;
             padding: 10px 65px;
             gap: 10px;
+            img {
+              width: 20px;
+              height: 25px;
+            }
             .cl-staffs-content-quote {
               gap: 10px;
-              img {
-                width: 20px;
-                height: 25px;
-              }
               p {
                 font-size: 12px;
                 line-height: 24px;
