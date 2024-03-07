@@ -4557,8 +4557,8 @@ main {
 .cl-about .our-mentors-spirit .group .item::before {
   content: "";
   position: absolute;
-  top: calc(1.5rem + 30px);
-  left: calc(100% - 2rem - 30px);
+  top: 50%;
+  left: 50%;
   width: 2.25rem;
   height: 0;
   padding-bottom: 2.25rem;
