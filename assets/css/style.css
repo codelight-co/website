@@ -4768,7 +4768,7 @@ main {
   background: none;
 }
 .cl-about .cl-contact:after {
-  top: -242px;
+  top: 0;
 }
 
 @media (max-width: 1399px) {
