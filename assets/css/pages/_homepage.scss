@@ -112,6 +112,7 @@
       position: absolute;
       z-index: 1;
       width: fit-content;
+      border-radius: 4px;
       .item {
         text-align: center;
         dl {
@@ -143,9 +144,11 @@
   }
   .cl-core-values {
     background: #fafafa;
+    // background: url("../images/core-values-line.png") no-repeat center top;
     .container {
       background: url("../images/core-values-line.png") no-repeat center top;
-      padding: 52px 0 160px 0;
+      padding: 52px 0 100px 0;
+      max-width: 100dvw;
     }
     .flip-container:hover .flipper,
     .flip-container.hover .flipper {
@@ -246,8 +249,13 @@
       }
     }
 
+    .cl-title {
+      margin-bottom: 50px;
+      // padding-top: 30px;
+    }
     .core-group {
       display: flex;
+      justify-content: space-between;
       .core-item-image {
         position: relative;
         img {
@@ -1342,7 +1350,7 @@
     }
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 436px) {
   .cl-homepage {
     .cl-about {
       .group {
