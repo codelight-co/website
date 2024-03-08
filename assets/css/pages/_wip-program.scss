@@ -75,8 +75,8 @@
           align-items: start;
           background-color: #f9fafb;
           border-radius: 12px;
-          padding: 20px 40px;
-          gap: 15px;
+          padding: 41px 74px;
+          gap: 28px;
           cursor: pointer;
           // img {
           //   width: 28px;
@@ -914,7 +914,6 @@
         .cl-staffs-box {
           gap: 0;
           .cl-staffs-content {
-            gap: 40px;
             .cl-staffs-content-quote {
               gap: 20px;
               img {
@@ -989,7 +988,7 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .cl-wip-program-page {
     .cl-banner {
       padding: 120px 0 60px 0;
@@ -1024,6 +1023,8 @@
             height: 50%;
           }
           .cl-staffs-content {
+            padding: 10px 40px;
+            gap: 15px;
             img {
               width: 30px;
               height: 30px;
@@ -1389,6 +1390,7 @@
         }
         .cl-staffs-box {
           .cl-staffs-content {
+            padding: 10px 100px;
             .cl-staffs-content-quote {
               p {
                 font-size: 10px;
