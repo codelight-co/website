@@ -186,6 +186,11 @@
   }
 }
 
+.cl-partners .container {
+  max-width: 100%;
+  padding: 0;
+}
+
 .modal .cl-title {
   font-size: 30px;
   margin-bottom: 0;
