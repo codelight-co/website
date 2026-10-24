@@ -1,0 +1,10 @@
+{
+  "domain": "codelight.tech",
+  "siteUrl": "https://codelight.tech",
+  "ogImage": "opengraph.png",
+  "emails": {
+    "info": "info@codelight.tech",
+    "contact": "contact@codelight.tech",
+    "info_chianotes": "info_chianotes@codelight.tech"
+  }
+}
