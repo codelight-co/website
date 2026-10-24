@@ -11,6 +11,7 @@ All domain-dependent values live in one file: [`site.config.json`](site.config.j
   "domain": "codelight.tech",
   "siteUrl": "https://codelight.tech",
   "ogImage": "opengraph.png",
+  "description": "We change the world through technology. ...",
   "emails": {
     "info": "info@codelight.tech",
     "contact": "contact@codelight.tech",
@@ -34,6 +35,7 @@ The script fills in elements marked with a `data-site` attribute:
 | `data-site="url"`         | `a`                | href and text = `siteUrl`                  |
 | `data-site="page-url"`    | `link`, `meta`     | canonical / `og:url` for that page         |
 | `data-site="og-image"`    | `meta`             | absolute `og:image` / `twitter:image` URL  |
+| `data-site="description"` | `meta`             | `description` / `og:description` / `twitter:description` |
 
 To add a new email address, add a key under `emails` and mark the element, e.g.
 `<a data-site="email:sales">placeholder</a>`.

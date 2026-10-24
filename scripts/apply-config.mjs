@@ -7,6 +7,7 @@
  *   data-site="url"          on <a>                  -> href=siteUrl + inner text
  *   data-site="page-url"     on <link>/<meta>        -> href/content = siteUrl + page path
  *   data-site="og-image"     on <meta>               -> content = siteUrl + "/" + ogImage
+ *   data-site="description"  on <meta>               -> content = config.description
  *
  * Usage:  node scripts/apply-config.mjs          (rewrite files)
  *         node scripts/apply-config.mjs --check  (exit 1 if any file is out of date)
@@ -42,6 +43,7 @@ function setAttr(attrs, name, value) {
 function valueFor(marker, file) {
   if (marker === "url") return siteUrl;
   if (marker === "page-url") return pageUrl(file);
+  if (marker === "description") return config.description;
   if (marker === "og-image") return `${siteUrl}/${config.ogImage.replace(/^\/+/, "")}`;
   if (marker.startsWith("email:")) {
     const key = marker.slice(6);
